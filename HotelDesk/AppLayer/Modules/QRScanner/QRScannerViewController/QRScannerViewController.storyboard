@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scanner View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="QRScannerViewController" customModule="HotelDesk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VSb-zt-xiR">
+                                <rect key="frame" x="0.0" y="44" width="414" height="46"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отсканируйте QR-код" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cN1-GB-ncG">
+                                        <rect key="frame" x="16" y="0.0" width="382" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" name="Light"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Dark"/>
+                                <constraints>
+                                    <constraint firstItem="cN1-GB-ncG" firstAttribute="top" secondItem="VSb-zt-xiR" secondAttribute="top" id="Abi-Jb-UWT"/>
+                                    <constraint firstItem="cN1-GB-ncG" firstAttribute="leading" secondItem="VSb-zt-xiR" secondAttribute="leading" constant="16" id="YI6-iW-5Hq"/>
+                                    <constraint firstAttribute="trailing" secondItem="cN1-GB-ncG" secondAttribute="trailing" constant="16" id="itj-Hb-VSb"/>
+                                    <constraint firstAttribute="bottom" secondItem="cN1-GB-ncG" secondAttribute="bottom" constant="16" id="pq4-MH-z9G"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="480-eL-igM" customClass="DesignableView" customModule="HotelDesk" customModuleProvider="target">
+                                <rect key="frame" x="16" y="791" width="382" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ошибка" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhK-OQ-PfL">
+                                        <rect key="frame" x="16" y="16" width="350" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                        <color key="textColor" name="Light"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.56258619295738099" blue="0.52808257059491326" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="IhK-OQ-PfL" secondAttribute="bottom" constant="16" id="Ka5-pG-OJ7"/>
+                                    <constraint firstItem="IhK-OQ-PfL" firstAttribute="top" secondItem="480-eL-igM" secondAttribute="top" constant="16" id="Vvo-2n-EbM"/>
+                                    <constraint firstAttribute="trailing" secondItem="IhK-OQ-PfL" secondAttribute="trailing" constant="16" id="cvB-fd-IfJ"/>
+                                    <constraint firstItem="IhK-OQ-PfL" firstAttribute="leading" secondItem="480-eL-igM" secondAttribute="leading" constant="16" id="k9k-IK-dhI"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bHj-EL-SxH" customClass="DesignableView" customModule="HotelDesk" customModuleProvider="target">
+                                <rect key="frame" x="83" y="324" width="248" height="248"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bHj-EL-SxH" secondAttribute="height" multiplier="1:1" id="H9V-VB-owh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemYellowColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="Dark"/>
+                        <constraints>
+                            <constraint firstItem="480-eL-igM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="4CJ-2v-TfP"/>
+                            <constraint firstItem="VSb-zt-xiR" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="7LL-jg-CRu"/>
+                            <constraint firstItem="bHj-EL-SxH" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Bpp-th-Zf4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VSb-zt-xiR" secondAttribute="trailing" id="FSs-uC-Fen"/>
+                            <constraint firstItem="bHj-EL-SxH" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.6" id="Ujb-Cd-fRB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="480-eL-igM" secondAttribute="trailing" constant="16" id="cCh-bA-aYo"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="480-eL-igM" secondAttribute="bottom" constant="16" id="e3E-P4-a0Q"/>
+                            <constraint firstItem="bHj-EL-SxH" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="hks-z1-n5v"/>
+                            <constraint firstItem="VSb-zt-xiR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="m6w-g9-xkQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="errorLabel" destination="IhK-OQ-PfL" id="vIL-C5-JZq"/>
+                        <outlet property="errorView" destination="480-eL-igM" id="ENR-I5-tkQ"/>
+                        <outlet property="qrCodeBordersView" destination="bHj-EL-SxH" id="72y-sT-Sl2"/>
+                        <outlet property="titleLabel" destination="cN1-GB-ncG" id="rJu-EA-bbW"/>
+                        <outlet property="titleView" destination="VSb-zt-xiR" id="NMf-hU-sZ1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="135.9375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Dark">
+            <color red="0.086274509803921567" green="0.11372549019607843" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Light">
+            <color red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="LoginViewController" customModule="HotelDesk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Rs9-Rh-tuR">
+                                <rect key="frame" x="16" y="722" width="382" height="124"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VcH-AS-nfN" customClass="DesignableButton" customModule="HotelDesk" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="54"/>
+                                        <color key="backgroundColor" name="Dark"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="6qd-0o-pz6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="scan QR-code">
+                                            <color key="titleColor" name="Light"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="scanQRCodeButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="QoW-YV-yXB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnY-Bh-V9A" customClass="DesignableButton" customModule="HotelDesk" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="70" width="382" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="CGC-ct-g8p"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Just check">
+                                            <color key="titleColor" name="Dark"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="Dark"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="enterAsGuestButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="kB3-W1-Fc2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="KAz-Yc-ceq">
+                                <rect key="frame" x="114" y="54" width="186" height="50"/>
+                                <color key="tintColor" name="Dark"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dH0-7m-cyN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добро пожаловать!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eai-Qe-zHR">
+                                <rect key="frame" x="16" y="144" width="382" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" name="Dark"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="Light"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Rs9-Rh-tuR" secondAttribute="trailing" constant="16" id="1d5-Je-Mso"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Rs9-Rh-tuR" secondAttribute="bottom" constant="16" id="4g9-fu-cPc"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="rnY-Bh-V9A" secondAttribute="bottom" priority="251" constant="16" id="5pm-mO-kFz"/>
+                            <constraint firstItem="Rs9-Rh-tuR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Daz-ns-Pp0"/>
+                            <constraint firstItem="Eai-Qe-zHR" firstAttribute="top" secondItem="KAz-Yc-ceq" secondAttribute="bottom" constant="40" id="cCs-eF-bHS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Eai-Qe-zHR" secondAttribute="trailing" constant="16" id="dbW-13-0SR"/>
+                            <constraint firstItem="KAz-Yc-ceq" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="qW8-hF-H7H"/>
+                            <constraint firstItem="Rs9-Rh-tuR" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Eai-Qe-zHR" secondAttribute="bottom" constant="16" id="ra9-NY-7Za"/>
+                            <constraint firstItem="Eai-Qe-zHR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="yUD-6Y-Xmq"/>
+                            <constraint firstItem="KAz-Yc-ceq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" priority="251" constant="10" id="yZh-Up-vEL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="enterAsGuestButton" destination="rnY-Bh-V9A" id="wWq-ML-R8C"/>
+                        <outlet property="scanQRButton" destination="VcH-AS-nfN" id="cvt-7b-8up"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="139"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="VcH-AS-nfN">
+            <size key="intrinsicContentSize" width="120" height="34"/>
+        </designable>
+        <designable name="rnY-Bh-V9A">
+            <size key="intrinsicContentSize" width="92" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="logo" width="186" height="84"/>
+        <namedColor name="Dark">
+            <color red="0.086274509803921567" green="0.11372549019607843" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Light">
+            <color red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

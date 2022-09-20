@@ -14,6 +14,65 @@
 		110960DD28DA1F04001F0035 /* Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110960DC28DA1F04001F0035 /* Designable.swift */; };
 		110960E128DA1F5A001F0035 /* UIWindow+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110960E028DA1F5A001F0035 /* UIWindow+extensions.swift */; };
 		110960E328DA1F77001F0035 /* UIViewController+transitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110960E228DA1F77001F0035 /* UIViewController+transitionHandler.swift */; };
+		110960E628DA1FDE001F0035 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110960E528DA1FDE001F0035 /* TabBarController.swift */; };
+		110960E928DA1FF7001F0035 /* TabBarObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110960E828DA1FF7001F0035 /* TabBarObjects.swift */; };
+		110960ED28DA2018001F0035 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110960EC28DA2018001F0035 /* NavigationController.swift */; };
+		110960F028DA2052001F0035 /* AppInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110960EF28DA2052001F0035 /* AppInitializer.swift */; };
+		110960F228DA2065001F0035 /* GlobalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110960F128DA2065001F0035 /* GlobalRouter.swift */; };
+		110960F428DA2082001F0035 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110960F328DA2082001F0035 /* Globals.swift */; };
+		110960F628DA20DD001F0035 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110960F528DA20DD001F0035 /* Colors.swift */; };
+		1109610628DA2151001F0035 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110960FB28DA2151001F0035 /* LoginPresenter.swift */; };
+		1109610728DA2151001F0035 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110960FD28DA2151001F0035 /* LoginConfigurator.swift */; };
+		1109610828DA2151001F0035 /* LoginRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110960FF28DA2151001F0035 /* LoginRouterInput.swift */; };
+		1109610928DA2151001F0035 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109610028DA2151001F0035 /* LoginRouter.swift */; };
+		1109610A28DA2151001F0035 /* LoginViewControllerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109610228DA2151001F0035 /* LoginViewControllerOutput.swift */; };
+		1109610B28DA2151001F0035 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109610328DA2151001F0035 /* LoginViewController.swift */; };
+		1109610C28DA2151001F0035 /* LoginViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109610428DA2151001F0035 /* LoginViewControllerInput.swift */; };
+		1109610D28DA2151001F0035 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1109610528DA2151001F0035 /* LoginViewController.storyboard */; };
+		1109611F28DA21FB001F0035 /* QRScannerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109611028DA21FB001F0035 /* QRScannerConfigurator.swift */; };
+		1109612028DA21FB001F0035 /* QRScannerRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109611228DA21FB001F0035 /* QRScannerRouterInput.swift */; };
+		1109612128DA21FB001F0035 /* QRScannerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109611328DA21FB001F0035 /* QRScannerRouter.swift */; };
+		1109612228DA21FB001F0035 /* QRScannerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1109611528DA21FB001F0035 /* QRScannerViewController.storyboard */; };
+		1109612328DA21FB001F0035 /* QRScannerViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109611628DA21FB001F0035 /* QRScannerViewControllerInput.swift */; };
+		1109612428DA21FB001F0035 /* QRScannerViewControllerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109611728DA21FB001F0035 /* QRScannerViewControllerOutput.swift */; };
+		1109612528DA21FB001F0035 /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109611828DA21FB001F0035 /* QRScannerViewController.swift */; };
+		1109612628DA21FB001F0035 /* QRScannerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109611A28DA21FB001F0035 /* QRScannerPresenter.swift */; };
+		1109612728DA21FB001F0035 /* QRScannerInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109611C28DA21FB001F0035 /* QRScannerInteractorInput.swift */; };
+		1109612828DA21FB001F0035 /* QRScannerInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109611D28DA21FB001F0035 /* QRScannerInteractorOutput.swift */; };
+		1109612928DA21FB001F0035 /* QRScannerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109611E28DA21FB001F0035 /* QRScannerInteractor.swift */; };
+		1109615D28DA223A001F0035 /* ChatbotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109612C28DA2239001F0035 /* ChatbotViewController.swift */; };
+		1109615E28DA223A001F0035 /* ChatbotViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109612D28DA2239001F0035 /* ChatbotViewControllerInput.swift */; };
+		1109615F28DA223A001F0035 /* ChatbotViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1109612E28DA2239001F0035 /* ChatbotViewController.storyboard */; };
+		1109616028DA223A001F0035 /* ChatbotViewControllerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109612F28DA2239001F0035 /* ChatbotViewControllerOutput.swift */; };
+		1109616128DA223A001F0035 /* ChatbotPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109613128DA2239001F0035 /* ChatbotPresenter.swift */; };
+		1109616228DA223A001F0035 /* ChatbotConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109613328DA2239001F0035 /* ChatbotConfigurator.swift */; };
+		1109616328DA223A001F0035 /* ChatbotRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109613528DA2239001F0035 /* ChatbotRouter.swift */; };
+		1109616428DA223A001F0035 /* ChatbotRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109613628DA2239001F0035 /* ChatbotRouterInput.swift */; };
+		1109616528DA223A001F0035 /* ChatbotInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109613828DA2239001F0035 /* ChatbotInteractor.swift */; };
+		1109616628DA223A001F0035 /* ChatbotInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109613928DA2239001F0035 /* ChatbotInteractorOutput.swift */; };
+		1109616728DA223A001F0035 /* ChatbotInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109613A28DA2239001F0035 /* ChatbotInteractorInput.swift */; };
+		1109616828DA223A001F0035 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109613D28DA2239001F0035 /* MenuPresenter.swift */; };
+		1109616928DA223A001F0035 /* MenuInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109613F28DA2239001F0035 /* MenuInteractorOutput.swift */; };
+		1109616A28DA223A001F0035 /* MenuInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109614028DA2239001F0035 /* MenuInteractorInput.swift */; };
+		1109616B28DA223A001F0035 /* MenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109614128DA2239001F0035 /* MenuInteractor.swift */; };
+		1109616C28DA223A001F0035 /* MenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109614328DA2239001F0035 /* MenuRouter.swift */; };
+		1109616D28DA223A001F0035 /* MenuRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109614428DA2239001F0035 /* MenuRouterInput.swift */; };
+		1109616E28DA223A001F0035 /* MenuConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109614628DA2239001F0035 /* MenuConfigurator.swift */; };
+		1109616F28DA223A001F0035 /* MenuViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109614828DA2239001F0035 /* MenuViewControllerInput.swift */; };
+		1109617028DA223A001F0035 /* MenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1109614928DA2239001F0035 /* MenuViewController.storyboard */; };
+		1109617128DA223A001F0035 /* MenuViewControllerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109614A28DA2239001F0035 /* MenuViewControllerOutput.swift */; };
+		1109617228DA223A001F0035 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109614B28DA2239001F0035 /* MenuViewController.swift */; };
+		1109617328DA223A001F0035 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109614E28DA2239001F0035 /* ProfilePresenter.swift */; };
+		1109617428DA223A001F0035 /* ProfileConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109615028DA2239001F0035 /* ProfileConfigurator.swift */; };
+		1109617528DA223A001F0035 /* ProfileViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109615228DA2239001F0035 /* ProfileViewControllerInput.swift */; };
+		1109617628DA223A001F0035 /* ProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1109615328DA2239001F0035 /* ProfileViewController.storyboard */; };
+		1109617728DA223A001F0035 /* ProfileViewControllerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109615428DA2239001F0035 /* ProfileViewControllerOutput.swift */; };
+		1109617828DA223A001F0035 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109615528DA2239001F0035 /* ProfileViewController.swift */; };
+		1109617928DA223A001F0035 /* ProfileInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109615728DA2239001F0035 /* ProfileInteractorOutput.swift */; };
+		1109617A28DA223A001F0035 /* ProfileInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109615828DA2239001F0035 /* ProfileInteractorInput.swift */; };
+		1109617B28DA223A001F0035 /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109615928DA2239001F0035 /* ProfileInteractor.swift */; };
+		1109617C28DA223A001F0035 /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109615B28DA2239001F0035 /* ProfileRouter.swift */; };
+		1109617D28DA223A001F0035 /* ProfileRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109615C28DA223A001F0035 /* ProfileRouterInput.swift */; };
 		3B738862ECDC2279B5D4075A /* Pods_HotelDesk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA8036EAE8F6F65E4C709C6 /* Pods_HotelDesk.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +86,65 @@
 		110960DC28DA1F04001F0035 /* Designable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Designable.swift; sourceTree = "<group>"; };
 		110960E028DA1F5A001F0035 /* UIWindow+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+extensions.swift"; sourceTree = "<group>"; };
 		110960E228DA1F77001F0035 /* UIViewController+transitionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+transitionHandler.swift"; sourceTree = "<group>"; };
+		110960E528DA1FDE001F0035 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		110960E828DA1FF7001F0035 /* TabBarObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarObjects.swift; sourceTree = "<group>"; };
+		110960EC28DA2018001F0035 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		110960EF28DA2052001F0035 /* AppInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInitializer.swift; sourceTree = "<group>"; };
+		110960F128DA2065001F0035 /* GlobalRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalRouter.swift; sourceTree = "<group>"; };
+		110960F328DA2082001F0035 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		110960F528DA20DD001F0035 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		110960FB28DA2151001F0035 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		110960FD28DA2151001F0035 /* LoginConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
+		110960FF28DA2151001F0035 /* LoginRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouterInput.swift; sourceTree = "<group>"; };
+		1109610028DA2151001F0035 /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		1109610228DA2151001F0035 /* LoginViewControllerOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerOutput.swift; sourceTree = "<group>"; };
+		1109610328DA2151001F0035 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1109610428DA2151001F0035 /* LoginViewControllerInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerInput.swift; sourceTree = "<group>"; };
+		1109610528DA2151001F0035 /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		1109611028DA21FB001F0035 /* QRScannerConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerConfigurator.swift; sourceTree = "<group>"; };
+		1109611228DA21FB001F0035 /* QRScannerRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerRouterInput.swift; sourceTree = "<group>"; };
+		1109611328DA21FB001F0035 /* QRScannerRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerRouter.swift; sourceTree = "<group>"; };
+		1109611528DA21FB001F0035 /* QRScannerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRScannerViewController.storyboard; sourceTree = "<group>"; };
+		1109611628DA21FB001F0035 /* QRScannerViewControllerInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerViewControllerInput.swift; sourceTree = "<group>"; };
+		1109611728DA21FB001F0035 /* QRScannerViewControllerOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerViewControllerOutput.swift; sourceTree = "<group>"; };
+		1109611828DA21FB001F0035 /* QRScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
+		1109611A28DA21FB001F0035 /* QRScannerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerPresenter.swift; sourceTree = "<group>"; };
+		1109611C28DA21FB001F0035 /* QRScannerInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerInteractorInput.swift; sourceTree = "<group>"; };
+		1109611D28DA21FB001F0035 /* QRScannerInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerInteractorOutput.swift; sourceTree = "<group>"; };
+		1109611E28DA21FB001F0035 /* QRScannerInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerInteractor.swift; sourceTree = "<group>"; };
+		1109612C28DA2239001F0035 /* ChatbotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatbotViewController.swift; sourceTree = "<group>"; };
+		1109612D28DA2239001F0035 /* ChatbotViewControllerInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatbotViewControllerInput.swift; sourceTree = "<group>"; };
+		1109612E28DA2239001F0035 /* ChatbotViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChatbotViewController.storyboard; sourceTree = "<group>"; };
+		1109612F28DA2239001F0035 /* ChatbotViewControllerOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatbotViewControllerOutput.swift; sourceTree = "<group>"; };
+		1109613128DA2239001F0035 /* ChatbotPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatbotPresenter.swift; sourceTree = "<group>"; };
+		1109613328DA2239001F0035 /* ChatbotConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatbotConfigurator.swift; sourceTree = "<group>"; };
+		1109613528DA2239001F0035 /* ChatbotRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatbotRouter.swift; sourceTree = "<group>"; };
+		1109613628DA2239001F0035 /* ChatbotRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatbotRouterInput.swift; sourceTree = "<group>"; };
+		1109613828DA2239001F0035 /* ChatbotInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatbotInteractor.swift; sourceTree = "<group>"; };
+		1109613928DA2239001F0035 /* ChatbotInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatbotInteractorOutput.swift; sourceTree = "<group>"; };
+		1109613A28DA2239001F0035 /* ChatbotInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatbotInteractorInput.swift; sourceTree = "<group>"; };
+		1109613D28DA2239001F0035 /* MenuPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
+		1109613F28DA2239001F0035 /* MenuInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuInteractorOutput.swift; sourceTree = "<group>"; };
+		1109614028DA2239001F0035 /* MenuInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuInteractorInput.swift; sourceTree = "<group>"; };
+		1109614128DA2239001F0035 /* MenuInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuInteractor.swift; sourceTree = "<group>"; };
+		1109614328DA2239001F0035 /* MenuRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuRouter.swift; sourceTree = "<group>"; };
+		1109614428DA2239001F0035 /* MenuRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuRouterInput.swift; sourceTree = "<group>"; };
+		1109614628DA2239001F0035 /* MenuConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuConfigurator.swift; sourceTree = "<group>"; };
+		1109614828DA2239001F0035 /* MenuViewControllerInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewControllerInput.swift; sourceTree = "<group>"; };
+		1109614928DA2239001F0035 /* MenuViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuViewController.storyboard; sourceTree = "<group>"; };
+		1109614A28DA2239001F0035 /* MenuViewControllerOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewControllerOutput.swift; sourceTree = "<group>"; };
+		1109614B28DA2239001F0035 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		1109614E28DA2239001F0035 /* ProfilePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		1109615028DA2239001F0035 /* ProfileConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileConfigurator.swift; sourceTree = "<group>"; };
+		1109615228DA2239001F0035 /* ProfileViewControllerInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewControllerInput.swift; sourceTree = "<group>"; };
+		1109615328DA2239001F0035 /* ProfileViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileViewController.storyboard; sourceTree = "<group>"; };
+		1109615428DA2239001F0035 /* ProfileViewControllerOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewControllerOutput.swift; sourceTree = "<group>"; };
+		1109615528DA2239001F0035 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		1109615728DA2239001F0035 /* ProfileInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileInteractorOutput.swift; sourceTree = "<group>"; };
+		1109615828DA2239001F0035 /* ProfileInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileInteractorInput.swift; sourceTree = "<group>"; };
+		1109615928DA2239001F0035 /* ProfileInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		1109615B28DA2239001F0035 /* ProfileRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
+		1109615C28DA223A001F0035 /* ProfileRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRouterInput.swift; sourceTree = "<group>"; };
 		36F58A5DE73B771C23879AEE /* Pods-HotelDesk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotelDesk.debug.xcconfig"; path = "Target Support Files/Pods-HotelDesk/Pods-HotelDesk.debug.xcconfig"; sourceTree = "<group>"; };
 		CE65B1768F4FFD6E4B39B978 /* Pods-HotelDesk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotelDesk.release.xcconfig"; path = "Target Support Files/Pods-HotelDesk/Pods-HotelDesk.release.xcconfig"; sourceTree = "<group>"; };
 		FBA8036EAE8F6F65E4C709C6 /* Pods_HotelDesk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotelDesk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				110960DE28DA1F2A001F0035 /* AppLayer */,
+				110960EE28DA203E001F0035 /* ServiceLayer */,
 				110960DA28DA1D53001F0035 /* Supporting+files */,
 			);
 			path = HotelDesk;
@@ -79,6 +198,7 @@
 				110960CF28DA1C5C001F0035 /* Assets.xcassets */,
 				110960D128DA1C5C001F0035 /* LaunchScreen.storyboard */,
 				110960D428DA1C5C001F0035 /* Info.plist */,
+				110960F528DA20DD001F0035 /* Colors.swift */,
 			);
 			path = "Supporting+files";
 			sourceTree = "<group>";
@@ -94,8 +214,11 @@
 		110960DE28DA1F2A001F0035 /* AppLayer */ = {
 			isa = PBXGroup;
 			children = (
-				110960DF28DA1F45001F0035 /* Extensions */,
 				110960DB28DA1EEA001F0035 /* Views */,
+				110960F828DA212E001F0035 /* Modules */,
+				110960F728DA2127001F0035 /* Cells */,
+				110960E428DA1FCC001F0035 /* Helpers */,
+				110960DF28DA1F45001F0035 /* Extensions */,
 			);
 			path = AppLayer;
 			sourceTree = "<group>";
@@ -107,6 +230,340 @@
 				110960E228DA1F77001F0035 /* UIViewController+transitionHandler.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		110960E428DA1FCC001F0035 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				110960EB28DA200E001F0035 /* NavigationController */,
+				110960EA28DA1FFD001F0035 /* TabBarController */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		110960EA28DA1FFD001F0035 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				110960E528DA1FDE001F0035 /* TabBarController.swift */,
+				110960E828DA1FF7001F0035 /* TabBarObjects.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		110960EB28DA200E001F0035 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				110960EC28DA2018001F0035 /* NavigationController.swift */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		110960EE28DA203E001F0035 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				110960EF28DA2052001F0035 /* AppInitializer.swift */,
+				110960F128DA2065001F0035 /* GlobalRouter.swift */,
+				110960F328DA2082001F0035 /* Globals.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		110960F728DA2127001F0035 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		110960F828DA212E001F0035 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				110960F928DA2151001F0035 /* Login */,
+				1109610E28DA21FB001F0035 /* QRScanner */,
+				1109612A28DA2239001F0035 /* Chatbot */,
+				1109613B28DA2239001F0035 /* Menu */,
+				1109614C28DA2239001F0035 /* Profile */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		110960F928DA2151001F0035 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				110960FA28DA2151001F0035 /* LoginPresenter */,
+				110960FC28DA2151001F0035 /* LoginConfigurator */,
+				110960FE28DA2151001F0035 /* LoginRouter */,
+				1109610128DA2151001F0035 /* LoginViewController */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		110960FA28DA2151001F0035 /* LoginPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				110960FB28DA2151001F0035 /* LoginPresenter.swift */,
+			);
+			path = LoginPresenter;
+			sourceTree = "<group>";
+		};
+		110960FC28DA2151001F0035 /* LoginConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				110960FD28DA2151001F0035 /* LoginConfigurator.swift */,
+			);
+			path = LoginConfigurator;
+			sourceTree = "<group>";
+		};
+		110960FE28DA2151001F0035 /* LoginRouter */ = {
+			isa = PBXGroup;
+			children = (
+				110960FF28DA2151001F0035 /* LoginRouterInput.swift */,
+				1109610028DA2151001F0035 /* LoginRouter.swift */,
+			);
+			path = LoginRouter;
+			sourceTree = "<group>";
+		};
+		1109610128DA2151001F0035 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1109610228DA2151001F0035 /* LoginViewControllerOutput.swift */,
+				1109610328DA2151001F0035 /* LoginViewController.swift */,
+				1109610428DA2151001F0035 /* LoginViewControllerInput.swift */,
+				1109610528DA2151001F0035 /* LoginViewController.storyboard */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		1109610E28DA21FB001F0035 /* QRScanner */ = {
+			isa = PBXGroup;
+			children = (
+				1109611428DA21FB001F0035 /* QRScannerViewController */,
+				1109611928DA21FB001F0035 /* QRScannerPresenter */,
+				1109611B28DA21FB001F0035 /* QRScannerInteractor */,
+				1109611128DA21FB001F0035 /* QRScannerRouter */,
+				1109610F28DA21FB001F0035 /* QRScannerConfigurator */,
+			);
+			path = QRScanner;
+			sourceTree = "<group>";
+		};
+		1109610F28DA21FB001F0035 /* QRScannerConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				1109611028DA21FB001F0035 /* QRScannerConfigurator.swift */,
+			);
+			path = QRScannerConfigurator;
+			sourceTree = "<group>";
+		};
+		1109611128DA21FB001F0035 /* QRScannerRouter */ = {
+			isa = PBXGroup;
+			children = (
+				1109611228DA21FB001F0035 /* QRScannerRouterInput.swift */,
+				1109611328DA21FB001F0035 /* QRScannerRouter.swift */,
+			);
+			path = QRScannerRouter;
+			sourceTree = "<group>";
+		};
+		1109611428DA21FB001F0035 /* QRScannerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1109611528DA21FB001F0035 /* QRScannerViewController.storyboard */,
+				1109611628DA21FB001F0035 /* QRScannerViewControllerInput.swift */,
+				1109611728DA21FB001F0035 /* QRScannerViewControllerOutput.swift */,
+				1109611828DA21FB001F0035 /* QRScannerViewController.swift */,
+			);
+			path = QRScannerViewController;
+			sourceTree = "<group>";
+		};
+		1109611928DA21FB001F0035 /* QRScannerPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				1109611A28DA21FB001F0035 /* QRScannerPresenter.swift */,
+			);
+			path = QRScannerPresenter;
+			sourceTree = "<group>";
+		};
+		1109611B28DA21FB001F0035 /* QRScannerInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				1109611C28DA21FB001F0035 /* QRScannerInteractorInput.swift */,
+				1109611D28DA21FB001F0035 /* QRScannerInteractorOutput.swift */,
+				1109611E28DA21FB001F0035 /* QRScannerInteractor.swift */,
+			);
+			path = QRScannerInteractor;
+			sourceTree = "<group>";
+		};
+		1109612A28DA2239001F0035 /* Chatbot */ = {
+			isa = PBXGroup;
+			children = (
+				1109612B28DA2239001F0035 /* ChatbotViewController */,
+				1109613028DA2239001F0035 /* ChatbotPresenter */,
+				1109613428DA2239001F0035 /* ChatbotRouter */,
+				1109613728DA2239001F0035 /* ChatbotInteractor */,
+				1109613228DA2239001F0035 /* ChatbotConfigurator */,
+			);
+			path = Chatbot;
+			sourceTree = "<group>";
+		};
+		1109612B28DA2239001F0035 /* ChatbotViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1109612C28DA2239001F0035 /* ChatbotViewController.swift */,
+				1109612D28DA2239001F0035 /* ChatbotViewControllerInput.swift */,
+				1109612E28DA2239001F0035 /* ChatbotViewController.storyboard */,
+				1109612F28DA2239001F0035 /* ChatbotViewControllerOutput.swift */,
+			);
+			path = ChatbotViewController;
+			sourceTree = "<group>";
+		};
+		1109613028DA2239001F0035 /* ChatbotPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				1109613128DA2239001F0035 /* ChatbotPresenter.swift */,
+			);
+			path = ChatbotPresenter;
+			sourceTree = "<group>";
+		};
+		1109613228DA2239001F0035 /* ChatbotConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				1109613328DA2239001F0035 /* ChatbotConfigurator.swift */,
+			);
+			path = ChatbotConfigurator;
+			sourceTree = "<group>";
+		};
+		1109613428DA2239001F0035 /* ChatbotRouter */ = {
+			isa = PBXGroup;
+			children = (
+				1109613528DA2239001F0035 /* ChatbotRouter.swift */,
+				1109613628DA2239001F0035 /* ChatbotRouterInput.swift */,
+			);
+			path = ChatbotRouter;
+			sourceTree = "<group>";
+		};
+		1109613728DA2239001F0035 /* ChatbotInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				1109613828DA2239001F0035 /* ChatbotInteractor.swift */,
+				1109613928DA2239001F0035 /* ChatbotInteractorOutput.swift */,
+				1109613A28DA2239001F0035 /* ChatbotInteractorInput.swift */,
+			);
+			path = ChatbotInteractor;
+			sourceTree = "<group>";
+		};
+		1109613B28DA2239001F0035 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				1109614728DA2239001F0035 /* MenuViewController */,
+				1109613C28DA2239001F0035 /* MenuPresenter */,
+				1109613E28DA2239001F0035 /* MenuInteractor */,
+				1109614228DA2239001F0035 /* MenuRouter */,
+				1109614528DA2239001F0035 /* MenuConfigurator */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		1109613C28DA2239001F0035 /* MenuPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				1109613D28DA2239001F0035 /* MenuPresenter.swift */,
+			);
+			path = MenuPresenter;
+			sourceTree = "<group>";
+		};
+		1109613E28DA2239001F0035 /* MenuInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				1109613F28DA2239001F0035 /* MenuInteractorOutput.swift */,
+				1109614028DA2239001F0035 /* MenuInteractorInput.swift */,
+				1109614128DA2239001F0035 /* MenuInteractor.swift */,
+			);
+			path = MenuInteractor;
+			sourceTree = "<group>";
+		};
+		1109614228DA2239001F0035 /* MenuRouter */ = {
+			isa = PBXGroup;
+			children = (
+				1109614328DA2239001F0035 /* MenuRouter.swift */,
+				1109614428DA2239001F0035 /* MenuRouterInput.swift */,
+			);
+			path = MenuRouter;
+			sourceTree = "<group>";
+		};
+		1109614528DA2239001F0035 /* MenuConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				1109614628DA2239001F0035 /* MenuConfigurator.swift */,
+			);
+			path = MenuConfigurator;
+			sourceTree = "<group>";
+		};
+		1109614728DA2239001F0035 /* MenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1109614828DA2239001F0035 /* MenuViewControllerInput.swift */,
+				1109614928DA2239001F0035 /* MenuViewController.storyboard */,
+				1109614A28DA2239001F0035 /* MenuViewControllerOutput.swift */,
+				1109614B28DA2239001F0035 /* MenuViewController.swift */,
+			);
+			path = MenuViewController;
+			sourceTree = "<group>";
+		};
+		1109614C28DA2239001F0035 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1109615128DA2239001F0035 /* ProfileViewController */,
+				1109614D28DA2239001F0035 /* ProfilePresenter */,
+				1109615628DA2239001F0035 /* ProfileInteractor */,
+				1109615A28DA2239001F0035 /* ProfileRouter */,
+				1109614F28DA2239001F0035 /* ProfileConfigurator */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1109614D28DA2239001F0035 /* ProfilePresenter */ = {
+			isa = PBXGroup;
+			children = (
+				1109614E28DA2239001F0035 /* ProfilePresenter.swift */,
+			);
+			path = ProfilePresenter;
+			sourceTree = "<group>";
+		};
+		1109614F28DA2239001F0035 /* ProfileConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				1109615028DA2239001F0035 /* ProfileConfigurator.swift */,
+			);
+			path = ProfileConfigurator;
+			sourceTree = "<group>";
+		};
+		1109615128DA2239001F0035 /* ProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1109615228DA2239001F0035 /* ProfileViewControllerInput.swift */,
+				1109615328DA2239001F0035 /* ProfileViewController.storyboard */,
+				1109615428DA2239001F0035 /* ProfileViewControllerOutput.swift */,
+				1109615528DA2239001F0035 /* ProfileViewController.swift */,
+			);
+			path = ProfileViewController;
+			sourceTree = "<group>";
+		};
+		1109615628DA2239001F0035 /* ProfileInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				1109615728DA2239001F0035 /* ProfileInteractorOutput.swift */,
+				1109615828DA2239001F0035 /* ProfileInteractorInput.swift */,
+				1109615928DA2239001F0035 /* ProfileInteractor.swift */,
+			);
+			path = ProfileInteractor;
+			sourceTree = "<group>";
+		};
+		1109615A28DA2239001F0035 /* ProfileRouter */ = {
+			isa = PBXGroup;
+			children = (
+				1109615B28DA2239001F0035 /* ProfileRouter.swift */,
+				1109615C28DA223A001F0035 /* ProfileRouterInput.swift */,
+			);
+			path = ProfileRouter;
 			sourceTree = "<group>";
 		};
 		55AE9F96DDF7AAEB8B59DB41 /* Frameworks */ = {
@@ -185,6 +642,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1109610D28DA2151001F0035 /* LoginViewController.storyboard in Resources */,
+				1109617628DA223A001F0035 /* ProfileViewController.storyboard in Resources */,
+				1109615F28DA223A001F0035 /* ChatbotViewController.storyboard in Resources */,
+				1109617028DA223A001F0035 /* MenuViewController.storyboard in Resources */,
+				1109612228DA21FB001F0035 /* QRScannerViewController.storyboard in Resources */,
 				110960D328DA1C5C001F0035 /* LaunchScreen.storyboard in Resources */,
 				110960D028DA1C5C001F0035 /* Assets.xcassets in Resources */,
 			);
@@ -222,10 +684,64 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1109615D28DA223A001F0035 /* ChatbotViewController.swift in Sources */,
+				1109616F28DA223A001F0035 /* MenuViewControllerInput.swift in Sources */,
+				1109616B28DA223A001F0035 /* MenuInteractor.swift in Sources */,
+				1109617228DA223A001F0035 /* MenuViewController.swift in Sources */,
+				1109617728DA223A001F0035 /* ProfileViewControllerOutput.swift in Sources */,
+				1109610B28DA2151001F0035 /* LoginViewController.swift in Sources */,
+				1109617D28DA223A001F0035 /* ProfileRouterInput.swift in Sources */,
+				1109617828DA223A001F0035 /* ProfileViewController.swift in Sources */,
+				1109610728DA2151001F0035 /* LoginConfigurator.swift in Sources */,
+				1109616828DA223A001F0035 /* MenuPresenter.swift in Sources */,
+				1109617428DA223A001F0035 /* ProfileConfigurator.swift in Sources */,
 				110960C728DA1C5A001F0035 /* AppDelegate.swift in Sources */,
+				110960F628DA20DD001F0035 /* Colors.swift in Sources */,
+				1109612128DA21FB001F0035 /* QRScannerRouter.swift in Sources */,
+				1109616228DA223A001F0035 /* ChatbotConfigurator.swift in Sources */,
+				1109616728DA223A001F0035 /* ChatbotInteractorInput.swift in Sources */,
+				1109612528DA21FB001F0035 /* QRScannerViewController.swift in Sources */,
+				1109610C28DA2151001F0035 /* LoginViewControllerInput.swift in Sources */,
+				1109610828DA2151001F0035 /* LoginRouterInput.swift in Sources */,
+				110960F228DA2065001F0035 /* GlobalRouter.swift in Sources */,
+				1109612728DA21FB001F0035 /* QRScannerInteractorInput.swift in Sources */,
+				110960ED28DA2018001F0035 /* NavigationController.swift in Sources */,
+				1109617328DA223A001F0035 /* ProfilePresenter.swift in Sources */,
+				1109617C28DA223A001F0035 /* ProfileRouter.swift in Sources */,
+				1109610928DA2151001F0035 /* LoginRouter.swift in Sources */,
 				110960E128DA1F5A001F0035 /* UIWindow+extensions.swift in Sources */,
+				1109616328DA223A001F0035 /* ChatbotRouter.swift in Sources */,
 				110960C928DA1C5A001F0035 /* SceneDelegate.swift in Sources */,
+				1109617928DA223A001F0035 /* ProfileInteractorOutput.swift in Sources */,
+				110960F428DA2082001F0035 /* Globals.swift in Sources */,
+				1109617B28DA223A001F0035 /* ProfileInteractor.swift in Sources */,
+				1109616A28DA223A001F0035 /* MenuInteractorInput.swift in Sources */,
+				1109617528DA223A001F0035 /* ProfileViewControllerInput.swift in Sources */,
+				1109616D28DA223A001F0035 /* MenuRouterInput.swift in Sources */,
+				1109610A28DA2151001F0035 /* LoginViewControllerOutput.swift in Sources */,
+				1109616928DA223A001F0035 /* MenuInteractorOutput.swift in Sources */,
+				1109616628DA223A001F0035 /* ChatbotInteractorOutput.swift in Sources */,
+				110960F028DA2052001F0035 /* AppInitializer.swift in Sources */,
+				1109617A28DA223A001F0035 /* ProfileInteractorInput.swift in Sources */,
+				1109612628DA21FB001F0035 /* QRScannerPresenter.swift in Sources */,
+				1109616028DA223A001F0035 /* ChatbotViewControllerOutput.swift in Sources */,
+				1109617128DA223A001F0035 /* MenuViewControllerOutput.swift in Sources */,
+				1109610628DA2151001F0035 /* LoginPresenter.swift in Sources */,
+				1109612828DA21FB001F0035 /* QRScannerInteractorOutput.swift in Sources */,
+				1109616528DA223A001F0035 /* ChatbotInteractor.swift in Sources */,
+				110960E928DA1FF7001F0035 /* TabBarObjects.swift in Sources */,
+				1109616428DA223A001F0035 /* ChatbotRouterInput.swift in Sources */,
+				1109616128DA223A001F0035 /* ChatbotPresenter.swift in Sources */,
+				110960E628DA1FDE001F0035 /* TabBarController.swift in Sources */,
+				1109612028DA21FB001F0035 /* QRScannerRouterInput.swift in Sources */,
+				1109612928DA21FB001F0035 /* QRScannerInteractor.swift in Sources */,
+				1109612428DA21FB001F0035 /* QRScannerViewControllerOutput.swift in Sources */,
 				110960DD28DA1F04001F0035 /* Designable.swift in Sources */,
+				1109612328DA21FB001F0035 /* QRScannerViewControllerInput.swift in Sources */,
+				1109616E28DA223A001F0035 /* MenuConfigurator.swift in Sources */,
+				1109611F28DA21FB001F0035 /* QRScannerConfigurator.swift in Sources */,
+				1109616C28DA223A001F0035 /* MenuRouter.swift in Sources */,
+				1109615E28DA223A001F0035 /* ChatbotViewControllerInput.swift in Sources */,
 				110960E328DA1F77001F0035 /* UIViewController+transitionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
