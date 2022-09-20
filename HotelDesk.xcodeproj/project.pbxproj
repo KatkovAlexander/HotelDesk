@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		110960C728DA1C5A001F0035 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110960C628DA1C5A001F0035 /* AppDelegate.swift */; };
 		110960C928DA1C5A001F0035 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110960C828DA1C5A001F0035 /* SceneDelegate.swift */; };
-		110960CB28DA1C5A001F0035 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110960CA28DA1C5A001F0035 /* ViewController.swift */; };
-		110960CE28DA1C5A001F0035 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110960CC28DA1C5A001F0035 /* Main.storyboard */; };
 		110960D028DA1C5C001F0035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 110960CF28DA1C5C001F0035 /* Assets.xcassets */; };
 		110960D328DA1C5C001F0035 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110960D128DA1C5C001F0035 /* LaunchScreen.storyboard */; };
+		110960DD28DA1F04001F0035 /* Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110960DC28DA1F04001F0035 /* Designable.swift */; };
+		110960E128DA1F5A001F0035 /* UIWindow+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110960E028DA1F5A001F0035 /* UIWindow+extensions.swift */; };
+		110960E328DA1F77001F0035 /* UIViewController+transitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110960E228DA1F77001F0035 /* UIViewController+transitionHandler.swift */; };
 		3B738862ECDC2279B5D4075A /* Pods_HotelDesk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA8036EAE8F6F65E4C709C6 /* Pods_HotelDesk.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,11 +21,12 @@
 		110960C328DA1C5A001F0035 /* HotelDesk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotelDesk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		110960C628DA1C5A001F0035 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		110960C828DA1C5A001F0035 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		110960CA28DA1C5A001F0035 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		110960CD28DA1C5A001F0035 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		110960CF28DA1C5C001F0035 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		110960D228DA1C5C001F0035 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		110960D428DA1C5C001F0035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		110960DC28DA1F04001F0035 /* Designable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Designable.swift; sourceTree = "<group>"; };
+		110960E028DA1F5A001F0035 /* UIWindow+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+extensions.swift"; sourceTree = "<group>"; };
+		110960E228DA1F77001F0035 /* UIViewController+transitionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+transitionHandler.swift"; sourceTree = "<group>"; };
 		36F58A5DE73B771C23879AEE /* Pods-HotelDesk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotelDesk.debug.xcconfig"; path = "Target Support Files/Pods-HotelDesk/Pods-HotelDesk.debug.xcconfig"; sourceTree = "<group>"; };
 		CE65B1768F4FFD6E4B39B978 /* Pods-HotelDesk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotelDesk.release.xcconfig"; path = "Target Support Files/Pods-HotelDesk/Pods-HotelDesk.release.xcconfig"; sourceTree = "<group>"; };
 		FBA8036EAE8F6F65E4C709C6 /* Pods_HotelDesk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotelDesk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,15 +65,48 @@
 		110960C528DA1C5A001F0035 /* HotelDesk */ = {
 			isa = PBXGroup;
 			children = (
+				110960DE28DA1F2A001F0035 /* AppLayer */,
+				110960DA28DA1D53001F0035 /* Supporting+files */,
+			);
+			path = HotelDesk;
+			sourceTree = "<group>";
+		};
+		110960DA28DA1D53001F0035 /* Supporting+files */ = {
+			isa = PBXGroup;
+			children = (
 				110960C628DA1C5A001F0035 /* AppDelegate.swift */,
 				110960C828DA1C5A001F0035 /* SceneDelegate.swift */,
-				110960CA28DA1C5A001F0035 /* ViewController.swift */,
-				110960CC28DA1C5A001F0035 /* Main.storyboard */,
 				110960CF28DA1C5C001F0035 /* Assets.xcassets */,
 				110960D128DA1C5C001F0035 /* LaunchScreen.storyboard */,
 				110960D428DA1C5C001F0035 /* Info.plist */,
 			);
-			path = HotelDesk;
+			path = "Supporting+files";
+			sourceTree = "<group>";
+		};
+		110960DB28DA1EEA001F0035 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				110960DC28DA1F04001F0035 /* Designable.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		110960DE28DA1F2A001F0035 /* AppLayer */ = {
+			isa = PBXGroup;
+			children = (
+				110960DF28DA1F45001F0035 /* Extensions */,
+				110960DB28DA1EEA001F0035 /* Views */,
+			);
+			path = AppLayer;
+			sourceTree = "<group>";
+		};
+		110960DF28DA1F45001F0035 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				110960E028DA1F5A001F0035 /* UIWindow+extensions.swift */,
+				110960E228DA1F77001F0035 /* UIViewController+transitionHandler.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		55AE9F96DDF7AAEB8B59DB41 /* Frameworks */ = {
@@ -88,7 +123,6 @@
 				36F58A5DE73B771C23879AEE /* Pods-HotelDesk.debug.xcconfig */,
 				CE65B1768F4FFD6E4B39B978 /* Pods-HotelDesk.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -153,7 +187,6 @@
 			files = (
 				110960D328DA1C5C001F0035 /* LaunchScreen.storyboard in Resources */,
 				110960D028DA1C5C001F0035 /* Assets.xcassets in Resources */,
-				110960CE28DA1C5A001F0035 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,23 +222,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				110960CB28DA1C5A001F0035 /* ViewController.swift in Sources */,
 				110960C728DA1C5A001F0035 /* AppDelegate.swift in Sources */,
+				110960E128DA1F5A001F0035 /* UIWindow+extensions.swift in Sources */,
 				110960C928DA1C5A001F0035 /* SceneDelegate.swift in Sources */,
+				110960DD28DA1F04001F0035 /* Designable.swift in Sources */,
+				110960E328DA1F77001F0035 /* UIViewController+transitionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		110960CC28DA1C5A001F0035 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				110960CD28DA1C5A001F0035 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		110960D128DA1C5C001F0035 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -340,10 +367,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HotelDesk/Info.plist;
+				INFOPLIST_FILE = "HotelDesk/Supporting+files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -355,7 +381,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -368,10 +394,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HotelDesk/Info.plist;
+				INFOPLIST_FILE = "HotelDesk/Supporting+files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -383,7 +408,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
