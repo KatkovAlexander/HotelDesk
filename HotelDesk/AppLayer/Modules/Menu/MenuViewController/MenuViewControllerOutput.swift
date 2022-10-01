@@ -11,5 +11,7 @@ import Foundation
 
 protocol MenuViewControllerOutput: AnyObject {
     
+    var models: [MenuSectionModel] { get }
+    
     func viewDidLoad()
 }

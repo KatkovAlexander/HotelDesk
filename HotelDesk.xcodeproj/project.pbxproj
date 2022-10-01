@@ -73,6 +73,15 @@
 		1109617B28DA223A001F0035 /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109615928DA2239001F0035 /* ProfileInteractor.swift */; };
 		1109617C28DA223A001F0035 /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109615B28DA2239001F0035 /* ProfileRouter.swift */; };
 		1109617D28DA223A001F0035 /* ProfileRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109615C28DA223A001F0035 /* ProfileRouterInput.swift */; };
+		118FC5BA28E0785000D9820A /* MenuStoriesLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC5B928E0785000D9820A /* MenuStoriesLayout.swift */; };
+		118FC5BC28E078CB00D9820A /* MenuCatalogLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC5BB28E078CB00D9820A /* MenuCatalogLayout.swift */; };
+		118FC5BE28E07A4100D9820A /* SectionLayoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC5BD28E07A4100D9820A /* SectionLayoutable.swift */; };
+		118FC5C328E07C4200D9820A /* StoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC5C228E07C4200D9820A /* StoryCell.swift */; };
+		118FC5C728E0840100D9820A /* StoryCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC5C628E0840100D9820A /* StoryCellModel.swift */; };
+		118FC5CC28E0873100D9820A /* UICollectionReusableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC5CB28E0873100D9820A /* UICollectionReusableView+extension.swift */; };
+		118FC5F228E2F0FE00D9820A /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC5F128E2F0FE00D9820A /* CategoryCell.swift */; };
+		118FC5F428E2F22900D9820A /* MenuCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC5F328E2F22900D9820A /* MenuCollectionViewModel.swift */; };
+		118FC5F628E2F25000D9820A /* CategoryCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC5F528E2F25000D9820A /* CategoryCellModel.swift */; };
 		3B738862ECDC2279B5D4075A /* Pods_HotelDesk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA8036EAE8F6F65E4C709C6 /* Pods_HotelDesk.framework */; };
 /* End PBXBuildFile section */
 
@@ -145,6 +154,15 @@
 		1109615928DA2239001F0035 /* ProfileInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
 		1109615B28DA2239001F0035 /* ProfileRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
 		1109615C28DA223A001F0035 /* ProfileRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRouterInput.swift; sourceTree = "<group>"; };
+		118FC5B928E0785000D9820A /* MenuStoriesLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuStoriesLayout.swift; sourceTree = "<group>"; };
+		118FC5BB28E078CB00D9820A /* MenuCatalogLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCatalogLayout.swift; sourceTree = "<group>"; };
+		118FC5BD28E07A4100D9820A /* SectionLayoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionLayoutable.swift; sourceTree = "<group>"; };
+		118FC5C228E07C4200D9820A /* StoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCell.swift; sourceTree = "<group>"; };
+		118FC5C628E0840100D9820A /* StoryCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCellModel.swift; sourceTree = "<group>"; };
+		118FC5CB28E0873100D9820A /* UICollectionReusableView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionReusableView+extension.swift"; sourceTree = "<group>"; };
+		118FC5F128E2F0FE00D9820A /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		118FC5F328E2F22900D9820A /* MenuCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewModel.swift; sourceTree = "<group>"; };
+		118FC5F528E2F25000D9820A /* CategoryCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellModel.swift; sourceTree = "<group>"; };
 		36F58A5DE73B771C23879AEE /* Pods-HotelDesk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotelDesk.debug.xcconfig"; path = "Target Support Files/Pods-HotelDesk/Pods-HotelDesk.debug.xcconfig"; sourceTree = "<group>"; };
 		CE65B1768F4FFD6E4B39B978 /* Pods-HotelDesk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotelDesk.release.xcconfig"; path = "Target Support Files/Pods-HotelDesk/Pods-HotelDesk.release.xcconfig"; sourceTree = "<group>"; };
 		FBA8036EAE8F6F65E4C709C6 /* Pods_HotelDesk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotelDesk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,6 +232,7 @@
 		110960DE28DA1F2A001F0035 /* AppLayer */ = {
 			isa = PBXGroup;
 			children = (
+				118FC5B828E0783F00D9820A /* Layouts */,
 				110960DB28DA1EEA001F0035 /* Views */,
 				110960F828DA212E001F0035 /* Modules */,
 				110960F728DA2127001F0035 /* Cells */,
@@ -228,6 +247,7 @@
 			children = (
 				110960E028DA1F5A001F0035 /* UIWindow+extensions.swift */,
 				110960E228DA1F77001F0035 /* UIViewController+transitionHandler.swift */,
+				118FC5CB28E0873100D9820A /* UICollectionReusableView+extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -237,6 +257,7 @@
 			children = (
 				110960EB28DA200E001F0035 /* NavigationController */,
 				110960EA28DA1FFD001F0035 /* TabBarController */,
+				118FC5BD28E07A4100D9820A /* SectionLayoutable.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -261,6 +282,7 @@
 		110960EE28DA203E001F0035 /* ServiceLayer */ = {
 			isa = PBXGroup;
 			children = (
+				118FC5F728E30F1000D9820A /* Models */,
 				110960EF28DA2052001F0035 /* AppInitializer.swift */,
 				110960F128DA2065001F0035 /* GlobalRouter.swift */,
 				110960F328DA2082001F0035 /* Globals.swift */,
@@ -271,6 +293,8 @@
 		110960F728DA2127001F0035 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				118FC5F028E2F0E800D9820A /* CategoryCell */,
+				118FC5C128E07C2700D9820A /* StoriesCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -566,6 +590,41 @@
 			path = ProfileRouter;
 			sourceTree = "<group>";
 		};
+		118FC5B828E0783F00D9820A /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				118FC5B928E0785000D9820A /* MenuStoriesLayout.swift */,
+				118FC5BB28E078CB00D9820A /* MenuCatalogLayout.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		118FC5C128E07C2700D9820A /* StoriesCell */ = {
+			isa = PBXGroup;
+			children = (
+				118FC5C228E07C4200D9820A /* StoryCell.swift */,
+				118FC5C628E0840100D9820A /* StoryCellModel.swift */,
+			);
+			path = StoriesCell;
+			sourceTree = "<group>";
+		};
+		118FC5F028E2F0E800D9820A /* CategoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				118FC5F128E2F0FE00D9820A /* CategoryCell.swift */,
+				118FC5F528E2F25000D9820A /* CategoryCellModel.swift */,
+			);
+			path = CategoryCell;
+			sourceTree = "<group>";
+		};
+		118FC5F728E30F1000D9820A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				118FC5F328E2F22900D9820A /* MenuCollectionViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		55AE9F96DDF7AAEB8B59DB41 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -594,6 +653,7 @@
 				110960BF28DA1C5A001F0035 /* Sources */,
 				110960C028DA1C5A001F0035 /* Frameworks */,
 				110960C128DA1C5A001F0035 /* Resources */,
+				9E3B2544647033B45321E719 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -655,6 +715,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		9E3B2544647033B45321E719 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HotelDesk/Pods-HotelDesk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HotelDesk/Pods-HotelDesk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HotelDesk/Pods-HotelDesk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E709DBCC78CACA0E1A54CA88 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -689,10 +766,14 @@
 				1109616B28DA223A001F0035 /* MenuInteractor.swift in Sources */,
 				1109617228DA223A001F0035 /* MenuViewController.swift in Sources */,
 				1109617728DA223A001F0035 /* ProfileViewControllerOutput.swift in Sources */,
+				118FC5CC28E0873100D9820A /* UICollectionReusableView+extension.swift in Sources */,
 				1109610B28DA2151001F0035 /* LoginViewController.swift in Sources */,
+				118FC5BC28E078CB00D9820A /* MenuCatalogLayout.swift in Sources */,
 				1109617D28DA223A001F0035 /* ProfileRouterInput.swift in Sources */,
 				1109617828DA223A001F0035 /* ProfileViewController.swift in Sources */,
+				118FC5C328E07C4200D9820A /* StoryCell.swift in Sources */,
 				1109610728DA2151001F0035 /* LoginConfigurator.swift in Sources */,
+				118FC5C728E0840100D9820A /* StoryCellModel.swift in Sources */,
 				1109616828DA223A001F0035 /* MenuPresenter.swift in Sources */,
 				1109617428DA223A001F0035 /* ProfileConfigurator.swift in Sources */,
 				110960C728DA1C5A001F0035 /* AppDelegate.swift in Sources */,
@@ -711,6 +792,7 @@
 				1109610928DA2151001F0035 /* LoginRouter.swift in Sources */,
 				110960E128DA1F5A001F0035 /* UIWindow+extensions.swift in Sources */,
 				1109616328DA223A001F0035 /* ChatbotRouter.swift in Sources */,
+				118FC5F228E2F0FE00D9820A /* CategoryCell.swift in Sources */,
 				110960C928DA1C5A001F0035 /* SceneDelegate.swift in Sources */,
 				1109617928DA223A001F0035 /* ProfileInteractorOutput.swift in Sources */,
 				110960F428DA2082001F0035 /* Globals.swift in Sources */,
@@ -718,7 +800,9 @@
 				1109616A28DA223A001F0035 /* MenuInteractorInput.swift in Sources */,
 				1109617528DA223A001F0035 /* ProfileViewControllerInput.swift in Sources */,
 				1109616D28DA223A001F0035 /* MenuRouterInput.swift in Sources */,
+				118FC5BE28E07A4100D9820A /* SectionLayoutable.swift in Sources */,
 				1109610A28DA2151001F0035 /* LoginViewControllerOutput.swift in Sources */,
+				118FC5F628E2F25000D9820A /* CategoryCellModel.swift in Sources */,
 				1109616928DA223A001F0035 /* MenuInteractorOutput.swift in Sources */,
 				1109616628DA223A001F0035 /* ChatbotInteractorOutput.swift in Sources */,
 				110960F028DA2052001F0035 /* AppInitializer.swift in Sources */,
@@ -726,7 +810,9 @@
 				1109612628DA21FB001F0035 /* QRScannerPresenter.swift in Sources */,
 				1109616028DA223A001F0035 /* ChatbotViewControllerOutput.swift in Sources */,
 				1109617128DA223A001F0035 /* MenuViewControllerOutput.swift in Sources */,
+				118FC5BA28E0785000D9820A /* MenuStoriesLayout.swift in Sources */,
 				1109610628DA2151001F0035 /* LoginPresenter.swift in Sources */,
+				118FC5F428E2F22900D9820A /* MenuCollectionViewModel.swift in Sources */,
 				1109612828DA21FB001F0035 /* QRScannerInteractorOutput.swift in Sources */,
 				1109616528DA223A001F0035 /* ChatbotInteractor.swift in Sources */,
 				110960E928DA1FF7001F0035 /* TabBarObjects.swift in Sources */,

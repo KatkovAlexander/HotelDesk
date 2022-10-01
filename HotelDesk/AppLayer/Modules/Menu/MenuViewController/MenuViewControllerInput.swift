@@ -12,4 +12,6 @@ import Foundation
 protocol MenuViewControllerInput: AnyObject {
 
     func initialSetup(title: String)
+    
+    func updateCollection(sections: [MenuSectionModel])
 }

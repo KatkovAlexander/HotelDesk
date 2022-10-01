@@ -18,8 +18,8 @@ final class MenuConfigurator {
         let router = MenuRouter(transitionHandler: viewController)
         let interactor = MenuInteractor()
         let presenter = MenuPresenter(view: viewController,
-                                                           interactor: interactor,
-                                                           router: router)
+                                      interactor: interactor,
+                                      router: router)
         
         interactor.output = presenter
         viewController.output = presenter
