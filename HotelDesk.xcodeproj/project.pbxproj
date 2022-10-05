@@ -82,6 +82,13 @@
 		118FC5F228E2F0FE00D9820A /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC5F128E2F0FE00D9820A /* CategoryCell.swift */; };
 		118FC5F428E2F22900D9820A /* MenuCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC5F328E2F22900D9820A /* MenuCollectionViewModel.swift */; };
 		118FC5F628E2F25000D9820A /* CategoryCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC5F528E2F25000D9820A /* CategoryCellModel.swift */; };
+		11937F8528E9B64500224DB9 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11937F8428E9B64500224DB9 /* Mock.swift */; };
+		11937F8828E9B99600224DB9 /* ChatInboxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11937F8728E9B99600224DB9 /* ChatInboxCell.swift */; };
+		11937F8A28E9BA5500224DB9 /* ChatInboxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11937F8928E9BA5500224DB9 /* ChatInboxCell.xib */; };
+		11937F9E28ED896000224DB9 /* ChatOutboxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11937F9D28ED896000224DB9 /* ChatOutboxCell.swift */; };
+		11937FA028ED896C00224DB9 /* ChatOutboxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11937F9F28ED896C00224DB9 /* ChatOutboxCell.xib */; };
+		11937FA428ED8C0C00224DB9 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11937FA328ED8C0C00224DB9 /* MessageModel.swift */; };
+		11937FA628ED9E5D00224DB9 /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11937FA528ED9E5D00224DB9 /* UITableView+extension.swift */; };
 		3B738862ECDC2279B5D4075A /* Pods_HotelDesk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA8036EAE8F6F65E4C709C6 /* Pods_HotelDesk.framework */; };
 /* End PBXBuildFile section */
 
@@ -163,6 +170,13 @@
 		118FC5F128E2F0FE00D9820A /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		118FC5F328E2F22900D9820A /* MenuCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewModel.swift; sourceTree = "<group>"; };
 		118FC5F528E2F25000D9820A /* CategoryCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellModel.swift; sourceTree = "<group>"; };
+		11937F8428E9B64500224DB9 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
+		11937F8728E9B99600224DB9 /* ChatInboxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInboxCell.swift; sourceTree = "<group>"; };
+		11937F8928E9BA5500224DB9 /* ChatInboxCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatInboxCell.xib; sourceTree = "<group>"; };
+		11937F9D28ED896000224DB9 /* ChatOutboxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatOutboxCell.swift; sourceTree = "<group>"; };
+		11937F9F28ED896C00224DB9 /* ChatOutboxCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatOutboxCell.xib; sourceTree = "<group>"; };
+		11937FA328ED8C0C00224DB9 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		11937FA528ED9E5D00224DB9 /* UITableView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+extension.swift"; sourceTree = "<group>"; };
 		36F58A5DE73B771C23879AEE /* Pods-HotelDesk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotelDesk.debug.xcconfig"; path = "Target Support Files/Pods-HotelDesk/Pods-HotelDesk.debug.xcconfig"; sourceTree = "<group>"; };
 		CE65B1768F4FFD6E4B39B978 /* Pods-HotelDesk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotelDesk.release.xcconfig"; path = "Target Support Files/Pods-HotelDesk/Pods-HotelDesk.release.xcconfig"; sourceTree = "<group>"; };
 		FBA8036EAE8F6F65E4C709C6 /* Pods_HotelDesk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotelDesk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -248,6 +262,7 @@
 				110960E028DA1F5A001F0035 /* UIWindow+extensions.swift */,
 				110960E228DA1F77001F0035 /* UIViewController+transitionHandler.swift */,
 				118FC5CB28E0873100D9820A /* UICollectionReusableView+extension.swift */,
+				11937FA528ED9E5D00224DB9 /* UITableView+extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -286,6 +301,7 @@
 				110960EF28DA2052001F0035 /* AppInitializer.swift */,
 				110960F128DA2065001F0035 /* GlobalRouter.swift */,
 				110960F328DA2082001F0035 /* Globals.swift */,
+				11937F8428E9B64500224DB9 /* Mock.swift */,
 			);
 			path = ServiceLayer;
 			sourceTree = "<group>";
@@ -293,6 +309,8 @@
 		110960F728DA2127001F0035 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				11937F9C28ED892B00224DB9 /* ChatOutboxCell */,
+				11937F8628E9B97900224DB9 /* ChatInboxCell */,
 				118FC5F028E2F0E800D9820A /* CategoryCell */,
 				118FC5C128E07C2700D9820A /* StoriesCell */,
 			);
@@ -621,8 +639,27 @@
 			isa = PBXGroup;
 			children = (
 				118FC5F328E2F22900D9820A /* MenuCollectionViewModel.swift */,
+				11937FA328ED8C0C00224DB9 /* MessageModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		11937F8628E9B97900224DB9 /* ChatInboxCell */ = {
+			isa = PBXGroup;
+			children = (
+				11937F8728E9B99600224DB9 /* ChatInboxCell.swift */,
+				11937F8928E9BA5500224DB9 /* ChatInboxCell.xib */,
+			);
+			path = ChatInboxCell;
+			sourceTree = "<group>";
+		};
+		11937F9C28ED892B00224DB9 /* ChatOutboxCell */ = {
+			isa = PBXGroup;
+			children = (
+				11937F9D28ED896000224DB9 /* ChatOutboxCell.swift */,
+				11937F9F28ED896C00224DB9 /* ChatOutboxCell.xib */,
+			);
+			path = ChatOutboxCell;
 			sourceTree = "<group>";
 		};
 		55AE9F96DDF7AAEB8B59DB41 /* Frameworks */ = {
@@ -702,8 +739,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11937FA028ED896C00224DB9 /* ChatOutboxCell.xib in Resources */,
 				1109610D28DA2151001F0035 /* LoginViewController.storyboard in Resources */,
 				1109617628DA223A001F0035 /* ProfileViewController.storyboard in Resources */,
+				11937F8A28E9BA5500224DB9 /* ChatInboxCell.xib in Resources */,
 				1109615F28DA223A001F0035 /* ChatbotViewController.storyboard in Resources */,
 				1109617028DA223A001F0035 /* MenuViewController.storyboard in Resources */,
 				1109612228DA21FB001F0035 /* QRScannerViewController.storyboard in Resources */,
@@ -764,6 +803,7 @@
 				1109615D28DA223A001F0035 /* ChatbotViewController.swift in Sources */,
 				1109616F28DA223A001F0035 /* MenuViewControllerInput.swift in Sources */,
 				1109616B28DA223A001F0035 /* MenuInteractor.swift in Sources */,
+				11937F9E28ED896000224DB9 /* ChatOutboxCell.swift in Sources */,
 				1109617228DA223A001F0035 /* MenuViewController.swift in Sources */,
 				1109617728DA223A001F0035 /* ProfileViewControllerOutput.swift in Sources */,
 				118FC5CC28E0873100D9820A /* UICollectionReusableView+extension.swift in Sources */,
@@ -775,9 +815,11 @@
 				1109610728DA2151001F0035 /* LoginConfigurator.swift in Sources */,
 				118FC5C728E0840100D9820A /* StoryCellModel.swift in Sources */,
 				1109616828DA223A001F0035 /* MenuPresenter.swift in Sources */,
+				11937F8528E9B64500224DB9 /* Mock.swift in Sources */,
 				1109617428DA223A001F0035 /* ProfileConfigurator.swift in Sources */,
 				110960C728DA1C5A001F0035 /* AppDelegate.swift in Sources */,
 				110960F628DA20DD001F0035 /* Colors.swift in Sources */,
+				11937F8828E9B99600224DB9 /* ChatInboxCell.swift in Sources */,
 				1109612128DA21FB001F0035 /* QRScannerRouter.swift in Sources */,
 				1109616228DA223A001F0035 /* ChatbotConfigurator.swift in Sources */,
 				1109616728DA223A001F0035 /* ChatbotInteractorInput.swift in Sources */,
@@ -793,6 +835,7 @@
 				110960E128DA1F5A001F0035 /* UIWindow+extensions.swift in Sources */,
 				1109616328DA223A001F0035 /* ChatbotRouter.swift in Sources */,
 				118FC5F228E2F0FE00D9820A /* CategoryCell.swift in Sources */,
+				11937FA428ED8C0C00224DB9 /* MessageModel.swift in Sources */,
 				110960C928DA1C5A001F0035 /* SceneDelegate.swift in Sources */,
 				1109617928DA223A001F0035 /* ProfileInteractorOutput.swift in Sources */,
 				110960F428DA2082001F0035 /* Globals.swift in Sources */,
@@ -801,6 +844,7 @@
 				1109617528DA223A001F0035 /* ProfileViewControllerInput.swift in Sources */,
 				1109616D28DA223A001F0035 /* MenuRouterInput.swift in Sources */,
 				118FC5BE28E07A4100D9820A /* SectionLayoutable.swift in Sources */,
+				11937FA628ED9E5D00224DB9 /* UITableView+extension.swift in Sources */,
 				1109610A28DA2151001F0035 /* LoginViewControllerOutput.swift in Sources */,
 				118FC5F628E2F25000D9820A /* CategoryCellModel.swift in Sources */,
 				1109616928DA223A001F0035 /* MenuInteractorOutput.swift in Sources */,

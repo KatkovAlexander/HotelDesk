@@ -13,6 +13,8 @@ enum Colors: String {
     
     case Light
     
+    case LightBlue
+    
     var ui: UIColor {
         return UIColor(named: rawValue) ?? .blue
     }

@@ -12,4 +12,6 @@ import Foundation
 protocol ChatbotViewControllerOutput: AnyObject {
     
     func viewDidLoad()
+    
+    func didTapSend(text: String)
 }

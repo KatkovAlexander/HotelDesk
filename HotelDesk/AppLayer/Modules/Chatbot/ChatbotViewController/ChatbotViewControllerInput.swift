@@ -12,4 +12,6 @@ import Foundation
 protocol ChatbotViewControllerInput: AnyObject {
 
     func initialSetup(title: String)
+    
+    func updateTable(message: MessageModel)
 }

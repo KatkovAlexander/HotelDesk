@@ -27,8 +27,19 @@ class ChatbotPresenter {
 
 // MARK: Extension - ChatbotViewToPresenterProtocol
 extension ChatbotPresenter: ChatbotViewControllerOutput {
+    
     func viewDidLoad() {
         view?.initialSetup(title: "Чат бот")
+    }
+    
+    func didTapSend(text: String) {
+        let output = MessageModel(type: .outbox, message: text)
+        view?.updateTable(message: output)
+    
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            let input = MessageModel(type: .inbox, message: Mock.smallString)
+            self.view?.updateTable(message: input)
+        }
     }
 }
 
