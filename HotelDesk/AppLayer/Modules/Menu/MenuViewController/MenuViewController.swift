@@ -76,6 +76,8 @@ class MenuViewController: UIViewController {
                 }
 
                 cell.bind(data)
+                cell.delegate = self.output
+                
                 return cell
             }
         })

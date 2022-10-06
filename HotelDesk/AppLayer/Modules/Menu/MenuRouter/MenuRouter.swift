@@ -15,5 +15,9 @@ class MenuRouter: MenuRouterInput {
     init(transitionHandler: TransitionHandler) {
         self.transitionHandler = transitionHandler
     }
+    
+    func openRoomServices() {
+        transitionHandler?.push(RoomServicesConfigurator().configure())
+    }
 }
 

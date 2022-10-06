@@ -27,8 +27,10 @@ class MenuPresenter {
     var models: [MenuSectionModel] = []
 }
 
-// MARK: Extension - MenuViewToPresenterProtocol
+// MARK: extension - MenuViewToPresenterProtocol
+
 extension MenuPresenter: MenuViewControllerOutput {
+    
     func viewDidLoad() {
         view?.initialSetup(title: "Главное меню")
         
@@ -58,7 +60,17 @@ extension MenuPresenter: MenuViewControllerOutput {
     }
 }
 
-// MARK: Extension - MenuInteractorToPresenterProtocol
+// MARK: extension - MenuInteractorToPresenterProtocol
+
 extension MenuPresenter: MenuInteractorOutput {
     
+}
+
+// MARK: extension - CategoryCellDelegate
+
+extension MenuPresenter: CategoryCellDelegate {
+    
+    func didSelectCategory() {
+        router.openRoomServices()
+    }
 }

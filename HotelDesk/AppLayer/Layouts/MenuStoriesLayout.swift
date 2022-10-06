@@ -25,12 +25,12 @@ struct StoriesLayout: SectionLayoutable {
             top: 5,
             leading: 4,
             bottom: 5,
-            trailing: 4)
+            trailing: 5)
 
         let section = NSCollectionLayoutSection(group: group)
         section.contentInsets.top = 12
         section.contentInsets.leading = 12
-        section.contentInsets.trailing = 12
+        section.contentInsets.trailing = 150
         section.orthogonalScrollingBehavior = .groupPaging
         
         return section

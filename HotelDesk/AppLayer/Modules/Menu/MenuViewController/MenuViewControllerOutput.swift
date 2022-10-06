@@ -9,7 +9,7 @@
 
 import Foundation
 
-protocol MenuViewControllerOutput: AnyObject {
+protocol MenuViewControllerOutput: AnyObject, CategoryCellDelegate {
     
     var models: [MenuSectionModel] { get }
     
