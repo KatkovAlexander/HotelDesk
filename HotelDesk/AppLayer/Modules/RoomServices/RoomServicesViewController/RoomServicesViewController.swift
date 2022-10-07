@@ -14,12 +14,19 @@ class RoomServicesViewController: UIViewController {
 
     // MARK: Outlets
     
-    @IBOutlet weak var tableView: UITableView! {
+    @IBOutlet private weak var tableView: UITableView! {
         didSet {
             tableView.translatesAutoresizingMaskIntoConstraints = false
             tableView.separatorStyle = .none
             tableView.dataSource = self
             tableView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 16, right: 0)
+        }
+    }
+    
+    @IBOutlet private weak var makeOrderView: DesignableView! {
+        didSet {
+            makeOrderView.addGestureRecognizer(UITapGestureRecognizer(target: self,
+                                                                      action: #selector(didTapMakeOrder)))
         }
     }
     
@@ -44,6 +51,14 @@ class RoomServicesViewController: UIViewController {
                            forCellReuseIdentifier: String(describing: CreatedRoomServieceCell.self))
         tableView.register(UINib(nibName: String(describing: AddRoomServieceCell.self), bundle: nil),
                            forCellReuseIdentifier: String(describing: AddRoomServieceCell.self))
+        tableView.register(UINib(nibName: String(describing: CreateRoomServieceCell.self), bundle: nil),
+                           forCellReuseIdentifier: String(describing: CreateRoomServieceCell.self))
+    }
+    
+    // MARK: Action
+    
+    @objc private func didTapMakeOrder() {
+        output.didTapMakeOrder()
     }
     
 }
@@ -60,6 +75,11 @@ extension RoomServicesViewController: RoomServicesViewControllerInput {
         self.models = models
         
         DispatchQueue.main.async { self.tableView.reloadData() }
+    }
+    
+    func isMakeOrderButtonAvailable(available: Bool) {
+        makeOrderView.isUserInteractionEnabled = available
+        makeOrderView.alpha = available ? 1 : 0.5
     }
 }
 
@@ -87,6 +107,15 @@ extension RoomServicesViewController: UITableViewDataSource {
                 return UITableViewCell(style: .default, reuseIdentifier: nil)
             }
             
+            cell.delegate = output
+            
+            return cell
+        case .create(let model):
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CreateRoomServieceCell.self), for: indexPath) as? CreateRoomServieceCell else {
+                return UITableViewCell(style: .default, reuseIdentifier: nil)
+            }
+            
+            cell.bind(model: .init(categoryText: model.categoryText, subcategoryText:model.subcategoryText))
             cell.delegate = output
             
             return cell

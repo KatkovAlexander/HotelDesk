@@ -9,7 +9,9 @@
 
 import Foundation
 
-protocol RoomServicesViewControllerOutput: AnyObject, CreatedRoomServieceCellDelegate, AddRoomServieceCellDelegate {
+protocol RoomServicesViewControllerOutput: AnyObject, CreatedRoomServieceCellDelegate, AddRoomServieceCellDelegate, CreateRoomServieceCellDelegate {
     
     func viewDidLoad()
+    
+    func didTapMakeOrder()
 }

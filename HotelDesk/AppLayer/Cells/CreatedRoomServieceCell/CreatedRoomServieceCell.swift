@@ -12,15 +12,16 @@ class CreatedRoomServieceCell: UITableViewCell {
     
     weak var delegate: CreatedRoomServieceCellDelegate?
     
-    private var servieceIndex: Int?
+    private var servieceId: Int?
     
     // MARK: Outlets
     
     @IBOutlet private weak var containerView: UIView!
     
     @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var subtitleLabel: UILabel!
     
-    @IBOutlet weak var deleteImageView: UIImageView! {
+    @IBOutlet private weak var deleteImageView: UIImageView! {
         didSet {
             deleteImageView.isUserInteractionEnabled = true
             deleteImageView.addGestureRecognizer(UITapGestureRecognizer(target: self,
@@ -39,18 +40,17 @@ class CreatedRoomServieceCell: UITableViewCell {
     }
     
     @objc private func didTap() {
-        guard let servieceIndex = servieceIndex else {
+        guard let servieceId = servieceId else {
             return
         }
         
-        delegate?.didTapDeleteCell(servieceIndex: servieceIndex)
+        delegate?.didTapDeleteCell(servieceId: servieceId)
     }
     
     func bind(model: CreatedRoomServieceCellModel) {
-        self.servieceIndex = model.servieceIndex
+        self.servieceId = model.servieceId
         
-        titleLabel.text = model.text
+        titleLabel.text = model.titleText
+        subtitleLabel.text = model.subtitleText
     }
-    
-    
 }

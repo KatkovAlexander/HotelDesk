@@ -14,4 +14,6 @@ protocol RoomServicesViewControllerInput: AnyObject {
     func initialState(title: String)
     
     func updateModel(models: [RoomServicesTableViewCellType])
+    
+    func isMakeOrderButtonAvailable(available: Bool)
 }

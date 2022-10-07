@@ -10,4 +10,5 @@ import Foundation
 
 protocol RoomServicesInteractorOutput: AnyObject {
 
+    func serviecesUpdated()
 }

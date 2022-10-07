@@ -70,6 +70,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="makeOrderView" destination="hBw-JQ-WDd" id="oXM-41-xz7"/>
                         <outlet property="tableView" destination="Hcw-ZV-yAT" id="hE7-tX-vog"/>
                     </connections>
                 </viewController>

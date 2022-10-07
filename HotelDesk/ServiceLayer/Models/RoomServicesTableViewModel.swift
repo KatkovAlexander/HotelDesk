@@ -13,4 +13,6 @@ enum RoomServicesTableViewCellType {
     case created(_ model: CreatedRoomServieceCellModel)
     
     case add
+    
+    case create(_ model: CreateRoomServieceCellModel)
 }

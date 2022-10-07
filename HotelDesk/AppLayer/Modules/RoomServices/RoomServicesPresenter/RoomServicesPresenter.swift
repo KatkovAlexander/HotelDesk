@@ -16,12 +16,40 @@ class RoomServicesPresenter {
     private let interactor: RoomServicesInteractorInput
     private let router: RoomServicesRouterInput
     
+    private var didServiceAdding = false
+    private var selectedCategory: String?
+    private var selectedSubcategory: String?
+    private var servieceId: Int = 0
+    
     init(view: RoomServicesViewControllerInput,
          interactor: RoomServicesInteractorInput,
          router: RoomServicesRouterInput) {
         self.view = view
         self.interactor = interactor
         self.router = router
+    }
+    
+    func buildModels() {
+        var models: [RoomServicesTableViewCellType] = []
+        
+        for service in interactor.servieces {
+            let serviceModel = RoomServicesTableViewCellType.created(.init(servieceId: service.servieceId,
+                                                                           titleText: service.titleText,
+                                                                           subtitleText: service.subtitleText))
+            models.append(serviceModel)
+        }
+        
+        if didServiceAdding {
+            let createModel = RoomServicesTableViewCellType.create(.init(categoryText: selectedCategory,
+                                                                         subcategoryText: selectedSubcategory))
+            models.append(createModel)
+        } else {
+            let addModel = RoomServicesTableViewCellType.add
+            models.append(addModel)
+        }
+        
+        view?.updateModel(models: models)
+        view?.isMakeOrderButtonAvailable(available: interactor.servieces.count > 0)
     }
 }
 
@@ -32,21 +60,64 @@ extension RoomServicesPresenter: RoomServicesViewControllerOutput {
     func viewDidLoad() {
         view?.initialState(title: "Обслуживание в номерах")
         
-        let model = RoomServicesTableViewCellType.created(.init(servieceIndex: 0, text: Mock.smallString))
-        let model2 = RoomServicesTableViewCellType.add
-        view?.updateModel(models: [model, model2])
+        buildModels()
     }
     
-    func didTapDeleteCell(servieceIndex: Int) {
-        print(#fileID, #function, servieceIndex)
+    func didTapMakeOrder() {
+        router.close()
+    }
+    
+    func didTapDeleteCell(servieceId: Int) {
+        interactor.deleteService(servieceId: servieceId)
     }
     
     func didTapAddRoomService() {
-        print(#fileID, #function)
+        didServiceAdding = true
+        buildModels()
+    }
+    
+    func didTapSelect(title: String, subtitle: String) {
+        didServiceAdding = false
+        selectedCategory = nil
+        selectedSubcategory = nil
+        interactor.addToServices(serviece: .init(servieceId: servieceId,
+                                                 titleText: title,
+                                                 subtitleText: subtitle))
+        servieceId += 1
+    }
+    
+    func didTapDeleteServieceCell() {
+        didServiceAdding = false
+        selectedCategory = nil
+        selectedSubcategory = nil
+        buildModels()
+    }
+    
+    func didSelectLabel(type: CreateRoomServieceCellSelectedLabelType) {
+        router.openModal(type: type, delegate: self)
     }
 }
 
 // MARK: Extension - RoomServicesInteractorToPresenterProtocol
+
 extension RoomServicesPresenter: RoomServicesInteractorOutput {
+
+    func serviecesUpdated() {
+        buildModels()
+    }
+}
+
+extension RoomServicesPresenter: RoomServiecePickerDelegate {
     
+    func selectedCell(text: String, type: CreateRoomServieceCellSelectedLabelType) {
+        switch type {
+        case .category:
+            selectedCategory = text
+            selectedSubcategory = nil
+        case .subcategory:
+            selectedSubcategory = text
+        }
+        
+        buildModels()
+    }
 }

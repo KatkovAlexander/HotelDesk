@@ -5,6 +5,7 @@ def shared_pods
 	pod 'SnapKit'
 	pod 'RxSwift'
 	pod 'RxKeyboard'
+	pod 'PanModal'
 end
 
 target 'HotelDesk' do

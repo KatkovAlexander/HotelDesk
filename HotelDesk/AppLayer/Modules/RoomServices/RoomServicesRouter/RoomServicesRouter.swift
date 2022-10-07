@@ -15,5 +15,14 @@ class RoomServicesRouter: RoomServicesRouterInput {
     init(transitionHandler: TransitionHandler) {
         self.transitionHandler = transitionHandler
     }
+    
+    func close() {
+        transitionHandler?.back()
+    }
+    
+    func openModal(type: CreateRoomServieceCellSelectedLabelType, delegate: RoomServiecePickerDelegate) {
+        let viewController = RoomServiecePickerConfigurator().configure(type: type, delegate: delegate)
+        transitionHandler?.openModal(viewController)
+    }
 }
 

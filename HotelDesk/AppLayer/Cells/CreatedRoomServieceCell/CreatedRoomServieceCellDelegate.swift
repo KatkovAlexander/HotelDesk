@@ -9,5 +9,5 @@ import Foundation
 
 protocol CreatedRoomServieceCellDelegate: AnyObject {
     
-    func didTapDeleteCell(servieceIndex: Int)
+    func didTapDeleteCell(servieceId: Int)
 }

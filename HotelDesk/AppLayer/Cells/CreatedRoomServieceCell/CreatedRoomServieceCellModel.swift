@@ -9,6 +9,7 @@ import Foundation
 
 struct CreatedRoomServieceCellModel {
     
-    let servieceIndex: Int
-    let text: String
+    let servieceId: Int
+    let titleText: String
+    let subtitleText: String
 }

@@ -10,4 +10,7 @@ import Foundation
 
 protocol RoomServicesRouterInput: AnyObject {
 
+    func close()
+    
+    func openModal(type: CreateRoomServieceCellSelectedLabelType, delegate: RoomServiecePickerDelegate)
 }
