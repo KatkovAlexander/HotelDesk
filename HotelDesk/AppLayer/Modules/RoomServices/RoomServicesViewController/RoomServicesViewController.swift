@@ -47,12 +47,12 @@ class RoomServicesViewController: UIViewController {
     // MARK: Private func
     
     private func registerCell() {
-        tableView.register(UINib(nibName: String(describing: CreatedRoomServieceCell.self), bundle: nil),
-                           forCellReuseIdentifier: String(describing: CreatedRoomServieceCell.self))
-        tableView.register(UINib(nibName: String(describing: AddRoomServieceCell.self), bundle: nil),
-                           forCellReuseIdentifier: String(describing: AddRoomServieceCell.self))
-        tableView.register(UINib(nibName: String(describing: CreateRoomServieceCell.self), bundle: nil),
-                           forCellReuseIdentifier: String(describing: CreateRoomServieceCell.self))
+        tableView.register(UINib(nibName: String(describing: CreatedRoomServiceCell.self), bundle: nil),
+                           forCellReuseIdentifier: String(describing: CreatedRoomServiceCell.self))
+        tableView.register(UINib(nibName: String(describing: AddRoomServiceCell.self), bundle: nil),
+                           forCellReuseIdentifier: String(describing: AddRoomServiceCell.self))
+        tableView.register(UINib(nibName: String(describing: CreateRoomServiceCell.self), bundle: nil),
+                           forCellReuseIdentifier: String(describing: CreateRoomServiceCell.self))
     }
     
     // MARK: Action
@@ -94,7 +94,7 @@ extension RoomServicesViewController: UITableViewDataSource {
         
         switch type {
         case .created(let model):
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CreatedRoomServieceCell.self), for: indexPath) as? CreatedRoomServieceCell else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CreatedRoomServiceCell.self), for: indexPath) as? CreatedRoomServiceCell else {
                 return UITableViewCell(style: .default, reuseIdentifier: nil)
             }
 
@@ -103,7 +103,7 @@ extension RoomServicesViewController: UITableViewDataSource {
             
             return cell
         case .add:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AddRoomServieceCell.self), for: indexPath) as? AddRoomServieceCell else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AddRoomServiceCell.self), for: indexPath) as? AddRoomServiceCell else {
                 return UITableViewCell(style: .default, reuseIdentifier: nil)
             }
             
@@ -111,7 +111,7 @@ extension RoomServicesViewController: UITableViewDataSource {
             
             return cell
         case .create(let model):
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CreateRoomServieceCell.self), for: indexPath) as? CreateRoomServieceCell else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CreateRoomServiceCell.self), for: indexPath) as? CreateRoomServiceCell else {
                 return UITableViewCell(style: .default, reuseIdentifier: nil)
             }
             

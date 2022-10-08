@@ -178,7 +178,7 @@ extension ChatbotViewController: UITextViewDelegate {
             sendImageView.tintColor = Colors.Dark.ui
             sendView.isUserInteractionEnabled = false
         } else {
-            sendView.backgroundColor = Colors.LightBlue.ui
+            sendView.backgroundColor = Colors.Dark.ui
             sendImageView.tintColor = Colors.Light.ui
             sendView.isUserInteractionEnabled = true
         }

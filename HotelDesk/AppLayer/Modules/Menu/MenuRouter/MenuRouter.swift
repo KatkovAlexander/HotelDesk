@@ -19,5 +19,9 @@ class MenuRouter: MenuRouterInput {
     func openRoomServices() {
         transitionHandler?.push(RoomServicesConfigurator().configure())
     }
+    
+    func openAlarm() {
+        transitionHandler?.openModal(AlarmConfigurator().configure())
+    }
 }
 

@@ -9,5 +9,5 @@ import Foundation
 
 protocol CategoryCellDelegate: AnyObject {
     
-    func didSelectCategory()
+    func didSelectCategory(type: CategoryCellType)
 }

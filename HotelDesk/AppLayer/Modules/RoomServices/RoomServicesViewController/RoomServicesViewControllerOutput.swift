@@ -9,7 +9,7 @@
 
 import Foundation
 
-protocol RoomServicesViewControllerOutput: AnyObject, CreatedRoomServieceCellDelegate, AddRoomServieceCellDelegate, CreateRoomServieceCellDelegate {
+protocol RoomServicesViewControllerOutput: AnyObject, CreatedRoomServiceCellDelegate, AddRoomServiceCellDelegate, CreateRoomServiceCellDelegate {
     
     func viewDidLoad()
     

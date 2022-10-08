@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "additionalBack.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

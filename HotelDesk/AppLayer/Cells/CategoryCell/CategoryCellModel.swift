@@ -7,13 +7,28 @@
 
 import Foundation
 
+enum CategoryCellType: String {
+    
+    case restaurant = "Ресторан SOUL"
+    
+    case roomService = "Обслуживание в номерах"
+    
+    case alarm = "Будильник"
+    
+    case mossArt = "Moss Art"
+    
+    case shop = "Zelinskiy & Rozen Shop"
+    
+    case additional = "Дополнительные услуги"
+}
+
 struct CategoryCellModel: Hashable, Equatable {
     
-    let image: String
+    let type: CategoryCellType
     
     var hashValue: Int {
         var hasher = Hasher()
-        hasher.combine(image)
+        hasher.combine(type)
         return hasher.finalize()
     }
     

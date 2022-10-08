@@ -11,4 +11,6 @@ import Foundation
 protocol MenuRouterInput: AnyObject {
 
     func openRoomServices()
+    
+    func openAlarm()
 }

@@ -73,6 +73,22 @@
 		1109617B28DA223A001F0035 /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109615928DA2239001F0035 /* ProfileInteractor.swift */; };
 		1109617C28DA223A001F0035 /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109615B28DA2239001F0035 /* ProfileRouter.swift */; };
 		1109617D28DA223A001F0035 /* ProfileRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109615C28DA223A001F0035 /* ProfileRouterInput.swift */; };
+		113E5CA228F1756F00288090 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113E5CA128F1756F00288090 /* CategoryCell.xib */; };
+		113E5CA428F1765D00288090 /* StoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113E5CA328F1765D00288090 /* StoryCell.xib */; };
+		113E5CB928F1959400288090 /* AlarmInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E5CAB28F1959300288090 /* AlarmInteractorOutput.swift */; };
+		113E5CBA28F1959400288090 /* AlarmInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E5CAC28F1959300288090 /* AlarmInteractorInput.swift */; };
+		113E5CBB28F1959400288090 /* AlarmInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E5CAD28F1959300288090 /* AlarmInteractor.swift */; };
+		113E5CBC28F1959400288090 /* AlarmRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E5CAF28F1959300288090 /* AlarmRouter.swift */; };
+		113E5CBD28F1959400288090 /* AlarmRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E5CB028F1959300288090 /* AlarmRouterInput.swift */; };
+		113E5CBE28F1959400288090 /* AlarmPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E5CB228F1959400288090 /* AlarmPresenter.swift */; };
+		113E5CBF28F1959400288090 /* AlarmConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E5CB428F1959400288090 /* AlarmConfigurator.swift */; };
+		113E5CC028F1959400288090 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E5CB628F1959400288090 /* AlarmViewController.swift */; };
+		113E5CC128F1959400288090 /* AlarmViewControllerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E5CB728F1959400288090 /* AlarmViewControllerOutput.swift */; };
+		113E5CC228F1959400288090 /* AlarmViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E5CB828F1959400288090 /* AlarmViewControllerInput.swift */; };
+		113E5CC428F195E500288090 /* AlarmViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113E5CC328F195E500288090 /* AlarmViewController.storyboard */; };
+		113E5CC928F1A5B000288090 /* SegmentControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113E5CC728F1A5B000288090 /* SegmentControl.xib */; };
+		113E5CCA28F1A5B000288090 /* SegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E5CC828F1A5B000288090 /* SegmentControl.swift */; };
+		113E5CCC28F1AA7F00288090 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E5CCB28F1AA7F00288090 /* NibLoadable.swift */; };
 		114272D628EF258000122A14 /* RoomServicesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114272D528EF258000122A14 /* RoomServicesConfigurator.swift */; };
 		114272DA28EF258800122A14 /* RoomServicesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114272D728EF258800122A14 /* RoomServicesInteractor.swift */; };
 		114272DB28EF258800122A14 /* RoomServicesInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114272D828EF258800122A14 /* RoomServicesInteractorOutput.swift */; };
@@ -87,19 +103,19 @@
 		114272EC28EF287800122A14 /* CategoryCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114272EB28EF287800122A14 /* CategoryCellDelegate.swift */; };
 		114272EE28EF31EE00122A14 /* RoomServicesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114272ED28EF31EE00122A14 /* RoomServicesTableViewModel.swift */; };
 		114272F028EF337D00122A14 /* AddRoomServieceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114272EF28EF337D00122A14 /* AddRoomServieceCell.swift */; };
-		114272F328EF33C100122A14 /* AddRoomServieceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114272F228EF33C100122A14 /* AddRoomServieceCell.xib */; };
-		114272F628EF365600122A14 /* CreatedRoomServieceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114272F528EF365600122A14 /* CreatedRoomServieceCell.swift */; };
-		114272F828EF36B800122A14 /* CreatedRoomServieceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114272F728EF36B800122A14 /* CreatedRoomServieceCell.xib */; };
-		114272FA28EF3ED200122A14 /* AddRoomServieceCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114272F928EF3ED200122A14 /* AddRoomServieceCellDelegate.swift */; };
-		114272FC28EF424300122A14 /* CreatedRoomServieceCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114272FB28EF424300122A14 /* CreatedRoomServieceCellDelegate.swift */; };
-		114272FE28EF452100122A14 /* CreatedRoomServieceCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114272FD28EF452100122A14 /* CreatedRoomServieceCellModel.swift */; };
-		1142730528F0818900122A14 /* CreateRoomServieceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1142730428F0818900122A14 /* CreateRoomServieceCell.swift */; };
-		1142730728F081A600122A14 /* CreateRoomServieceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1142730628F081A600122A14 /* CreateRoomServieceCell.xib */; };
-		1142730928F08B0C00122A14 /* CreateRoomServieceCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1142730828F08B0C00122A14 /* CreateRoomServieceCellDelegate.swift */; };
-		1142730D28F0915300122A14 /* CreateRoomServieceCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1142730C28F0915300122A14 /* CreateRoomServieceCellModel.swift */; };
-		1142731628F09E6E00122A14 /* RoomServiecePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1142731328F09E6E00122A14 /* RoomServiecePickerViewController.swift */; };
-		1142731A28F09E7600122A14 /* RoomServiecePickerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1142731928F09E7600122A14 /* RoomServiecePickerConfigurator.swift */; };
-		1142731C28F09FFF00122A14 /* RoomServiecePickerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1142731B28F09FFF00122A14 /* RoomServiecePickerViewController.storyboard */; };
+		114272F328EF33C100122A14 /* AddRoomServiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114272F228EF33C100122A14 /* AddRoomServiceCell.xib */; };
+		114272F628EF365600122A14 /* CreatedRoomServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114272F528EF365600122A14 /* CreatedRoomServiceCell.swift */; };
+		114272F828EF36B800122A14 /* CreatedRoomServiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114272F728EF36B800122A14 /* CreatedRoomServiceCell.xib */; };
+		114272FA28EF3ED200122A14 /* AddRoomServiceCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114272F928EF3ED200122A14 /* AddRoomServiceCellDelegate.swift */; };
+		114272FC28EF424300122A14 /* CreatedRoomServiceCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114272FB28EF424300122A14 /* CreatedRoomServiceCellDelegate.swift */; };
+		114272FE28EF452100122A14 /* CreatedRoomServiceCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114272FD28EF452100122A14 /* CreatedRoomServiceCellModel.swift */; };
+		1142730528F0818900122A14 /* CreateRoomServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1142730428F0818900122A14 /* CreateRoomServiceCell.swift */; };
+		1142730728F081A600122A14 /* CreateRoomServiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1142730628F081A600122A14 /* CreateRoomServiceCell.xib */; };
+		1142730928F08B0C00122A14 /* CreateRoomServiceCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1142730828F08B0C00122A14 /* CreateRoomServiceCellDelegate.swift */; };
+		1142730D28F0915300122A14 /* CreateRoomServiceCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1142730C28F0915300122A14 /* CreateRoomServiceCellModel.swift */; };
+		1142731628F09E6E00122A14 /* RoomServicePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1142731328F09E6E00122A14 /* RoomServicePickerViewController.swift */; };
+		1142731A28F09E7600122A14 /* RoomServicePickerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1142731928F09E7600122A14 /* RoomServicePickerConfigurator.swift */; };
+		1142731C28F09FFF00122A14 /* RoomServicePickerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1142731B28F09FFF00122A14 /* RoomServicePickerViewController.storyboard */; };
 		118FC5BA28E0785000D9820A /* MenuStoriesLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC5B928E0785000D9820A /* MenuStoriesLayout.swift */; };
 		118FC5BC28E078CB00D9820A /* MenuCatalogLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC5BB28E078CB00D9820A /* MenuCatalogLayout.swift */; };
 		118FC5BE28E07A4100D9820A /* SectionLayoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC5BD28E07A4100D9820A /* SectionLayoutable.swift */; };
@@ -188,6 +204,22 @@
 		1109615928DA2239001F0035 /* ProfileInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
 		1109615B28DA2239001F0035 /* ProfileRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
 		1109615C28DA223A001F0035 /* ProfileRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRouterInput.swift; sourceTree = "<group>"; };
+		113E5CA128F1756F00288090 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		113E5CA328F1765D00288090 /* StoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCell.xib; sourceTree = "<group>"; };
+		113E5CAB28F1959300288090 /* AlarmInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmInteractorOutput.swift; sourceTree = "<group>"; };
+		113E5CAC28F1959300288090 /* AlarmInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmInteractorInput.swift; sourceTree = "<group>"; };
+		113E5CAD28F1959300288090 /* AlarmInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmInteractor.swift; sourceTree = "<group>"; };
+		113E5CAF28F1959300288090 /* AlarmRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmRouter.swift; sourceTree = "<group>"; };
+		113E5CB028F1959300288090 /* AlarmRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmRouterInput.swift; sourceTree = "<group>"; };
+		113E5CB228F1959400288090 /* AlarmPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmPresenter.swift; sourceTree = "<group>"; };
+		113E5CB428F1959400288090 /* AlarmConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmConfigurator.swift; sourceTree = "<group>"; };
+		113E5CB628F1959400288090 /* AlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		113E5CB728F1959400288090 /* AlarmViewControllerOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmViewControllerOutput.swift; sourceTree = "<group>"; };
+		113E5CB828F1959400288090 /* AlarmViewControllerInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmViewControllerInput.swift; sourceTree = "<group>"; };
+		113E5CC328F195E500288090 /* AlarmViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlarmViewController.storyboard; sourceTree = "<group>"; };
+		113E5CC728F1A5B000288090 /* SegmentControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentControl.xib; sourceTree = "<group>"; };
+		113E5CC828F1A5B000288090 /* SegmentControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentControl.swift; sourceTree = "<group>"; };
+		113E5CCB28F1AA7F00288090 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		114272D528EF258000122A14 /* RoomServicesConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomServicesConfigurator.swift; sourceTree = "<group>"; };
 		114272D728EF258800122A14 /* RoomServicesInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomServicesInteractor.swift; sourceTree = "<group>"; };
 		114272D828EF258800122A14 /* RoomServicesInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomServicesInteractorOutput.swift; sourceTree = "<group>"; };
@@ -202,19 +234,19 @@
 		114272EB28EF287800122A14 /* CategoryCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellDelegate.swift; sourceTree = "<group>"; };
 		114272ED28EF31EE00122A14 /* RoomServicesTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomServicesTableViewModel.swift; sourceTree = "<group>"; };
 		114272EF28EF337D00122A14 /* AddRoomServieceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoomServieceCell.swift; sourceTree = "<group>"; };
-		114272F228EF33C100122A14 /* AddRoomServieceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddRoomServieceCell.xib; sourceTree = "<group>"; };
-		114272F528EF365600122A14 /* CreatedRoomServieceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatedRoomServieceCell.swift; sourceTree = "<group>"; };
-		114272F728EF36B800122A14 /* CreatedRoomServieceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreatedRoomServieceCell.xib; sourceTree = "<group>"; };
-		114272F928EF3ED200122A14 /* AddRoomServieceCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoomServieceCellDelegate.swift; sourceTree = "<group>"; };
-		114272FB28EF424300122A14 /* CreatedRoomServieceCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatedRoomServieceCellDelegate.swift; sourceTree = "<group>"; };
-		114272FD28EF452100122A14 /* CreatedRoomServieceCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatedRoomServieceCellModel.swift; sourceTree = "<group>"; };
-		1142730428F0818900122A14 /* CreateRoomServieceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomServieceCell.swift; sourceTree = "<group>"; };
-		1142730628F081A600122A14 /* CreateRoomServieceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateRoomServieceCell.xib; sourceTree = "<group>"; };
-		1142730828F08B0C00122A14 /* CreateRoomServieceCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomServieceCellDelegate.swift; sourceTree = "<group>"; };
-		1142730C28F0915300122A14 /* CreateRoomServieceCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomServieceCellModel.swift; sourceTree = "<group>"; };
-		1142731328F09E6E00122A14 /* RoomServiecePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomServiecePickerViewController.swift; sourceTree = "<group>"; };
-		1142731928F09E7600122A14 /* RoomServiecePickerConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomServiecePickerConfigurator.swift; sourceTree = "<group>"; };
-		1142731B28F09FFF00122A14 /* RoomServiecePickerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RoomServiecePickerViewController.storyboard; sourceTree = "<group>"; };
+		114272F228EF33C100122A14 /* AddRoomServiceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddRoomServiceCell.xib; sourceTree = "<group>"; };
+		114272F528EF365600122A14 /* CreatedRoomServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatedRoomServiceCell.swift; sourceTree = "<group>"; };
+		114272F728EF36B800122A14 /* CreatedRoomServiceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreatedRoomServiceCell.xib; sourceTree = "<group>"; };
+		114272F928EF3ED200122A14 /* AddRoomServiceCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoomServiceCellDelegate.swift; sourceTree = "<group>"; };
+		114272FB28EF424300122A14 /* CreatedRoomServiceCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatedRoomServiceCellDelegate.swift; sourceTree = "<group>"; };
+		114272FD28EF452100122A14 /* CreatedRoomServiceCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatedRoomServiceCellModel.swift; sourceTree = "<group>"; };
+		1142730428F0818900122A14 /* CreateRoomServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomServiceCell.swift; sourceTree = "<group>"; };
+		1142730628F081A600122A14 /* CreateRoomServiceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateRoomServiceCell.xib; sourceTree = "<group>"; };
+		1142730828F08B0C00122A14 /* CreateRoomServiceCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomServiceCellDelegate.swift; sourceTree = "<group>"; };
+		1142730C28F0915300122A14 /* CreateRoomServiceCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomServiceCellModel.swift; sourceTree = "<group>"; };
+		1142731328F09E6E00122A14 /* RoomServicePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomServicePickerViewController.swift; sourceTree = "<group>"; };
+		1142731928F09E7600122A14 /* RoomServicePickerConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomServicePickerConfigurator.swift; sourceTree = "<group>"; };
+		1142731B28F09FFF00122A14 /* RoomServicePickerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RoomServicePickerViewController.storyboard; sourceTree = "<group>"; };
 		118FC5B928E0785000D9820A /* MenuStoriesLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuStoriesLayout.swift; sourceTree = "<group>"; };
 		118FC5BB28E078CB00D9820A /* MenuCatalogLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCatalogLayout.swift; sourceTree = "<group>"; };
 		118FC5BD28E07A4100D9820A /* SectionLayoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionLayoutable.swift; sourceTree = "<group>"; };
@@ -292,6 +324,7 @@
 		110960DB28DA1EEA001F0035 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				113E5CC628F1A5B000288090 /* SegmentControl */,
 				110960DC28DA1F04001F0035 /* Designable.swift */,
 			);
 			path = Views;
@@ -327,6 +360,7 @@
 				110960EB28DA200E001F0035 /* NavigationController */,
 				110960EA28DA1FFD001F0035 /* TabBarController */,
 				118FC5BD28E07A4100D9820A /* SectionLayoutable.swift */,
+				113E5CCB28F1AA7F00288090 /* NibLoadable.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -363,9 +397,9 @@
 		110960F728DA2127001F0035 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				1142730328F0816700122A14 /* CreateRoomServieceCell */,
-				114272F428EF362E00122A14 /* CreatedRoomServieceCell */,
-				114272F128EF33B100122A14 /* AddRoomServieceCell */,
+				1142730328F0816700122A14 /* CreateRoomServiceCell */,
+				114272F428EF362E00122A14 /* CreatedRoomServiceCell */,
+				114272F128EF33B100122A14 /* AddRoomServiceCell */,
 				11937F9C28ED892B00224DB9 /* ChatOutboxCell */,
 				11937F8628E9B97900224DB9 /* ChatInboxCell */,
 				118FC5F028E2F0E800D9820A /* CategoryCell */,
@@ -377,7 +411,8 @@
 		110960F828DA212E001F0035 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				1142730E28F09E3300122A14 /* RoomServiecePicker */,
+				113E5CA928F1958B00288090 /* Alarm */,
+				1142730E28F09E3300122A14 /* RoomServicePicker */,
 				114272CD28EF24F700122A14 /* RoomServices */,
 				110960F928DA2151001F0035 /* Login */,
 				1109610E28DA21FB001F0035 /* QRScanner */,
@@ -667,6 +702,73 @@
 			path = ProfileRouter;
 			sourceTree = "<group>";
 		};
+		113E5CA928F1958B00288090 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				113E5CB528F1959400288090 /* AlarmViewController */,
+				113E5CB128F1959400288090 /* AlarmPresenter */,
+				113E5CAA28F1959300288090 /* AlarmInteractor */,
+				113E5CAE28F1959300288090 /* AlarmRouter */,
+				113E5CB328F1959400288090 /* AlarmConfigurator */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		113E5CAA28F1959300288090 /* AlarmInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				113E5CAB28F1959300288090 /* AlarmInteractorOutput.swift */,
+				113E5CAC28F1959300288090 /* AlarmInteractorInput.swift */,
+				113E5CAD28F1959300288090 /* AlarmInteractor.swift */,
+			);
+			path = AlarmInteractor;
+			sourceTree = "<group>";
+		};
+		113E5CAE28F1959300288090 /* AlarmRouter */ = {
+			isa = PBXGroup;
+			children = (
+				113E5CAF28F1959300288090 /* AlarmRouter.swift */,
+				113E5CB028F1959300288090 /* AlarmRouterInput.swift */,
+			);
+			path = AlarmRouter;
+			sourceTree = "<group>";
+		};
+		113E5CB128F1959400288090 /* AlarmPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				113E5CB228F1959400288090 /* AlarmPresenter.swift */,
+			);
+			path = AlarmPresenter;
+			sourceTree = "<group>";
+		};
+		113E5CB328F1959400288090 /* AlarmConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				113E5CB428F1959400288090 /* AlarmConfigurator.swift */,
+			);
+			path = AlarmConfigurator;
+			sourceTree = "<group>";
+		};
+		113E5CB528F1959400288090 /* AlarmViewController */ = {
+			isa = PBXGroup;
+			children = (
+				113E5CB628F1959400288090 /* AlarmViewController.swift */,
+				113E5CB728F1959400288090 /* AlarmViewControllerOutput.swift */,
+				113E5CB828F1959400288090 /* AlarmViewControllerInput.swift */,
+				113E5CC328F195E500288090 /* AlarmViewController.storyboard */,
+			);
+			path = AlarmViewController;
+			sourceTree = "<group>";
+		};
+		113E5CC628F1A5B000288090 /* SegmentControl */ = {
+			isa = PBXGroup;
+			children = (
+				113E5CC728F1A5B000288090 /* SegmentControl.xib */,
+				113E5CC828F1A5B000288090 /* SegmentControl.swift */,
+			);
+			path = SegmentControl;
+			sourceTree = "<group>";
+		};
 		114272CD28EF24F700122A14 /* RoomServices */ = {
 			isa = PBXGroup;
 			children = (
@@ -725,62 +827,62 @@
 			path = RoomServicesViewController;
 			sourceTree = "<group>";
 		};
-		114272F128EF33B100122A14 /* AddRoomServieceCell */ = {
+		114272F128EF33B100122A14 /* AddRoomServiceCell */ = {
 			isa = PBXGroup;
 			children = (
-				114272F928EF3ED200122A14 /* AddRoomServieceCellDelegate.swift */,
+				114272F928EF3ED200122A14 /* AddRoomServiceCellDelegate.swift */,
 				114272EF28EF337D00122A14 /* AddRoomServieceCell.swift */,
-				114272F228EF33C100122A14 /* AddRoomServieceCell.xib */,
+				114272F228EF33C100122A14 /* AddRoomServiceCell.xib */,
 			);
-			path = AddRoomServieceCell;
+			path = AddRoomServiceCell;
 			sourceTree = "<group>";
 		};
-		114272F428EF362E00122A14 /* CreatedRoomServieceCell */ = {
+		114272F428EF362E00122A14 /* CreatedRoomServiceCell */ = {
 			isa = PBXGroup;
 			children = (
-				114272FB28EF424300122A14 /* CreatedRoomServieceCellDelegate.swift */,
-				114272FD28EF452100122A14 /* CreatedRoomServieceCellModel.swift */,
-				114272F528EF365600122A14 /* CreatedRoomServieceCell.swift */,
-				114272F728EF36B800122A14 /* CreatedRoomServieceCell.xib */,
+				114272FB28EF424300122A14 /* CreatedRoomServiceCellDelegate.swift */,
+				114272FD28EF452100122A14 /* CreatedRoomServiceCellModel.swift */,
+				114272F528EF365600122A14 /* CreatedRoomServiceCell.swift */,
+				114272F728EF36B800122A14 /* CreatedRoomServiceCell.xib */,
 			);
-			path = CreatedRoomServieceCell;
+			path = CreatedRoomServiceCell;
 			sourceTree = "<group>";
 		};
-		1142730328F0816700122A14 /* CreateRoomServieceCell */ = {
+		1142730328F0816700122A14 /* CreateRoomServiceCell */ = {
 			isa = PBXGroup;
 			children = (
-				1142730428F0818900122A14 /* CreateRoomServieceCell.swift */,
-				1142730628F081A600122A14 /* CreateRoomServieceCell.xib */,
-				1142730828F08B0C00122A14 /* CreateRoomServieceCellDelegate.swift */,
-				1142730C28F0915300122A14 /* CreateRoomServieceCellModel.swift */,
+				1142730428F0818900122A14 /* CreateRoomServiceCell.swift */,
+				1142730628F081A600122A14 /* CreateRoomServiceCell.xib */,
+				1142730828F08B0C00122A14 /* CreateRoomServiceCellDelegate.swift */,
+				1142730C28F0915300122A14 /* CreateRoomServiceCellModel.swift */,
 			);
-			path = CreateRoomServieceCell;
+			path = CreateRoomServiceCell;
 			sourceTree = "<group>";
 		};
-		1142730E28F09E3300122A14 /* RoomServiecePicker */ = {
+		1142730E28F09E3300122A14 /* RoomServicePicker */ = {
 			isa = PBXGroup;
 			children = (
-				1142731128F09E6E00122A14 /* RoomServiecePickerViewController */,
-				1142731828F09E7600122A14 /* RoomServiecePickerConfigurator */,
+				1142731128F09E6E00122A14 /* RoomServicePickerViewController */,
+				1142731828F09E7600122A14 /* RoomServicePickerConfigurator */,
 			);
-			path = RoomServiecePicker;
+			path = RoomServicePicker;
 			sourceTree = "<group>";
 		};
-		1142731128F09E6E00122A14 /* RoomServiecePickerViewController */ = {
+		1142731128F09E6E00122A14 /* RoomServicePickerViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1142731328F09E6E00122A14 /* RoomServiecePickerViewController.swift */,
-				1142731B28F09FFF00122A14 /* RoomServiecePickerViewController.storyboard */,
+				1142731328F09E6E00122A14 /* RoomServicePickerViewController.swift */,
+				1142731B28F09FFF00122A14 /* RoomServicePickerViewController.storyboard */,
 			);
-			path = RoomServiecePickerViewController;
+			path = RoomServicePickerViewController;
 			sourceTree = "<group>";
 		};
-		1142731828F09E7600122A14 /* RoomServiecePickerConfigurator */ = {
+		1142731828F09E7600122A14 /* RoomServicePickerConfigurator */ = {
 			isa = PBXGroup;
 			children = (
-				1142731928F09E7600122A14 /* RoomServiecePickerConfigurator.swift */,
+				1142731928F09E7600122A14 /* RoomServicePickerConfigurator.swift */,
 			);
-			path = RoomServiecePickerConfigurator;
+			path = RoomServicePickerConfigurator;
 			sourceTree = "<group>";
 		};
 		118FC5B828E0783F00D9820A /* Layouts */ = {
@@ -797,6 +899,7 @@
 			children = (
 				118FC5C228E07C4200D9820A /* StoryCell.swift */,
 				118FC5C628E0840100D9820A /* StoryCellModel.swift */,
+				113E5CA328F1765D00288090 /* StoryCell.xib */,
 			);
 			path = StoriesCell;
 			sourceTree = "<group>";
@@ -807,6 +910,7 @@
 				118FC5F128E2F0FE00D9820A /* CategoryCell.swift */,
 				118FC5F528E2F25000D9820A /* CategoryCellModel.swift */,
 				114272EB28EF287800122A14 /* CategoryCellDelegate.swift */,
+				113E5CA128F1756F00288090 /* CategoryCell.xib */,
 			);
 			path = CategoryCell;
 			sourceTree = "<group>";
@@ -920,16 +1024,20 @@
 				1109610D28DA2151001F0035 /* LoginViewController.storyboard in Resources */,
 				1109617628DA223A001F0035 /* ProfileViewController.storyboard in Resources */,
 				11937F8A28E9BA5500224DB9 /* ChatInboxCell.xib in Resources */,
-				1142730728F081A600122A14 /* CreateRoomServieceCell.xib in Resources */,
+				1142730728F081A600122A14 /* CreateRoomServiceCell.xib in Resources */,
 				114272EA28EF25B400122A14 /* RoomServicesViewController.storyboard in Resources */,
 				1109615F28DA223A001F0035 /* ChatbotViewController.storyboard in Resources */,
-				114272F328EF33C100122A14 /* AddRoomServieceCell.xib in Resources */,
-				114272F828EF36B800122A14 /* CreatedRoomServieceCell.xib in Resources */,
+				114272F328EF33C100122A14 /* AddRoomServiceCell.xib in Resources */,
+				114272F828EF36B800122A14 /* CreatedRoomServiceCell.xib in Resources */,
 				1109617028DA223A001F0035 /* MenuViewController.storyboard in Resources */,
-				1142731C28F09FFF00122A14 /* RoomServiecePickerViewController.storyboard in Resources */,
+				113E5CA228F1756F00288090 /* CategoryCell.xib in Resources */,
+				1142731C28F09FFF00122A14 /* RoomServicePickerViewController.storyboard in Resources */,
 				1109612228DA21FB001F0035 /* QRScannerViewController.storyboard in Resources */,
 				110960D328DA1C5C001F0035 /* LaunchScreen.storyboard in Resources */,
+				113E5CC928F1A5B000288090 /* SegmentControl.xib in Resources */,
+				113E5CC428F195E500288090 /* AlarmViewController.storyboard in Resources */,
 				110960D028DA1C5C001F0035 /* Assets.xcassets in Resources */,
+				113E5CA428F1765D00288090 /* StoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -983,19 +1091,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				1109615D28DA223A001F0035 /* ChatbotViewController.swift in Sources */,
+				113E5CBA28F1959400288090 /* AlarmInteractorInput.swift in Sources */,
 				1109616F28DA223A001F0035 /* MenuViewControllerInput.swift in Sources */,
 				1109616B28DA223A001F0035 /* MenuInteractor.swift in Sources */,
 				11937F9E28ED896000224DB9 /* ChatOutboxCell.swift in Sources */,
 				1109617228DA223A001F0035 /* MenuViewController.swift in Sources */,
 				1109617728DA223A001F0035 /* ProfileViewControllerOutput.swift in Sources */,
-				1142731628F09E6E00122A14 /* RoomServiecePickerViewController.swift in Sources */,
+				1142731628F09E6E00122A14 /* RoomServicePickerViewController.swift in Sources */,
+				113E5CC228F1959400288090 /* AlarmViewControllerInput.swift in Sources */,
 				118FC5CC28E0873100D9820A /* UICollectionReusableView+extension.swift in Sources */,
+				113E5CBC28F1959400288090 /* AlarmRouter.swift in Sources */,
 				114272E828EF259F00122A14 /* RoomServicesViewControllerInput.swift in Sources */,
+				113E5CBE28F1959400288090 /* AlarmPresenter.swift in Sources */,
 				1109610B28DA2151001F0035 /* LoginViewController.swift in Sources */,
 				118FC5BC28E078CB00D9820A /* MenuCatalogLayout.swift in Sources */,
 				114272EC28EF287800122A14 /* CategoryCellDelegate.swift in Sources */,
 				1109617D28DA223A001F0035 /* ProfileRouterInput.swift in Sources */,
-				1142730528F0818900122A14 /* CreateRoomServieceCell.swift in Sources */,
+				1142730528F0818900122A14 /* CreateRoomServiceCell.swift in Sources */,
 				1109617828DA223A001F0035 /* ProfileViewController.swift in Sources */,
 				118FC5C328E07C4200D9820A /* StoryCell.swift in Sources */,
 				1109610728DA2151001F0035 /* LoginConfigurator.swift in Sources */,
@@ -1008,14 +1120,16 @@
 				11937F8828E9B99600224DB9 /* ChatInboxCell.swift in Sources */,
 				1109612128DA21FB001F0035 /* QRScannerRouter.swift in Sources */,
 				1109616228DA223A001F0035 /* ChatbotConfigurator.swift in Sources */,
-				114272FC28EF424300122A14 /* CreatedRoomServieceCellDelegate.swift in Sources */,
+				114272FC28EF424300122A14 /* CreatedRoomServiceCellDelegate.swift in Sources */,
 				1109616728DA223A001F0035 /* ChatbotInteractorInput.swift in Sources */,
 				1109612528DA21FB001F0035 /* QRScannerViewController.swift in Sources */,
 				1109610C28DA2151001F0035 /* LoginViewControllerInput.swift in Sources */,
 				1109610828DA2151001F0035 /* LoginRouterInput.swift in Sources */,
+				113E5CBF28F1959400288090 /* AlarmConfigurator.swift in Sources */,
 				114272EE28EF31EE00122A14 /* RoomServicesTableViewModel.swift in Sources */,
 				114272E228EF259500122A14 /* RoomServicesRouterInput.swift in Sources */,
 				110960F228DA2065001F0035 /* GlobalRouter.swift in Sources */,
+				113E5CCC28F1AA7F00288090 /* NibLoadable.swift in Sources */,
 				1109612728DA21FB001F0035 /* QRScannerInteractorInput.swift in Sources */,
 				110960ED28DA2018001F0035 /* NavigationController.swift in Sources */,
 				1109617328DA223A001F0035 /* ProfilePresenter.swift in Sources */,
@@ -1025,6 +1139,7 @@
 				110960E128DA1F5A001F0035 /* UIWindow+extensions.swift in Sources */,
 				1109616328DA223A001F0035 /* ChatbotRouter.swift in Sources */,
 				118FC5F228E2F0FE00D9820A /* CategoryCell.swift in Sources */,
+				113E5CC128F1959400288090 /* AlarmViewControllerOutput.swift in Sources */,
 				11937FA428ED8C0C00224DB9 /* MessageModel.swift in Sources */,
 				114272DA28EF258800122A14 /* RoomServicesInteractor.swift in Sources */,
 				114272F028EF337D00122A14 /* AddRoomServieceCell.swift in Sources */,
@@ -1036,6 +1151,7 @@
 				1109617528DA223A001F0035 /* ProfileViewControllerInput.swift in Sources */,
 				1109616D28DA223A001F0035 /* MenuRouterInput.swift in Sources */,
 				118FC5BE28E07A4100D9820A /* SectionLayoutable.swift in Sources */,
+				113E5CCA28F1A5B000288090 /* SegmentControl.swift in Sources */,
 				11937FA628ED9E5D00224DB9 /* UITableView+extension.swift in Sources */,
 				1109610A28DA2151001F0035 /* LoginViewControllerOutput.swift in Sources */,
 				114272DE28EF258E00122A14 /* RoomServicesPresenter.swift in Sources */,
@@ -1050,27 +1166,31 @@
 				1109616028DA223A001F0035 /* ChatbotViewControllerOutput.swift in Sources */,
 				1109617128DA223A001F0035 /* MenuViewControllerOutput.swift in Sources */,
 				118FC5BA28E0785000D9820A /* MenuStoriesLayout.swift in Sources */,
-				1142731A28F09E7600122A14 /* RoomServiecePickerConfigurator.swift in Sources */,
+				1142731A28F09E7600122A14 /* RoomServicePickerConfigurator.swift in Sources */,
+				113E5CC028F1959400288090 /* AlarmViewController.swift in Sources */,
+				113E5CBD28F1959400288090 /* AlarmRouterInput.swift in Sources */,
 				1109610628DA2151001F0035 /* LoginPresenter.swift in Sources */,
-				114272F628EF365600122A14 /* CreatedRoomServieceCell.swift in Sources */,
+				114272F628EF365600122A14 /* CreatedRoomServiceCell.swift in Sources */,
 				118FC5F428E2F22900D9820A /* MenuCollectionViewModel.swift in Sources */,
 				114272DB28EF258800122A14 /* RoomServicesInteractorOutput.swift in Sources */,
 				1109612828DA21FB001F0035 /* QRScannerInteractorOutput.swift in Sources */,
 				1109616528DA223A001F0035 /* ChatbotInteractor.swift in Sources */,
-				1142730928F08B0C00122A14 /* CreateRoomServieceCellDelegate.swift in Sources */,
+				1142730928F08B0C00122A14 /* CreateRoomServiceCellDelegate.swift in Sources */,
 				110960E928DA1FF7001F0035 /* TabBarObjects.swift in Sources */,
-				114272FE28EF452100122A14 /* CreatedRoomServieceCellModel.swift in Sources */,
+				114272FE28EF452100122A14 /* CreatedRoomServiceCellModel.swift in Sources */,
 				1109616428DA223A001F0035 /* ChatbotRouterInput.swift in Sources */,
+				113E5CB928F1959400288090 /* AlarmInteractorOutput.swift in Sources */,
 				1109616128DA223A001F0035 /* ChatbotPresenter.swift in Sources */,
 				110960E628DA1FDE001F0035 /* TabBarController.swift in Sources */,
-				1142730D28F0915300122A14 /* CreateRoomServieceCellModel.swift in Sources */,
+				1142730D28F0915300122A14 /* CreateRoomServiceCellModel.swift in Sources */,
 				1109612028DA21FB001F0035 /* QRScannerRouterInput.swift in Sources */,
 				1109612928DA21FB001F0035 /* QRScannerInteractor.swift in Sources */,
+				113E5CBB28F1959400288090 /* AlarmInteractor.swift in Sources */,
 				114272D628EF258000122A14 /* RoomServicesConfigurator.swift in Sources */,
 				1109612428DA21FB001F0035 /* QRScannerViewControllerOutput.swift in Sources */,
 				110960DD28DA1F04001F0035 /* Designable.swift in Sources */,
 				114272DC28EF258800122A14 /* RoomServicesInteractorInput.swift in Sources */,
-				114272FA28EF3ED200122A14 /* AddRoomServieceCellDelegate.swift in Sources */,
+				114272FA28EF3ED200122A14 /* AddRoomServiceCellDelegate.swift in Sources */,
 				1109612328DA21FB001F0035 /* QRScannerViewControllerInput.swift in Sources */,
 				1109616E28DA223A001F0035 /* MenuConfigurator.swift in Sources */,
 				1109611F28DA21FB001F0035 /* QRScannerConfigurator.swift in Sources */,

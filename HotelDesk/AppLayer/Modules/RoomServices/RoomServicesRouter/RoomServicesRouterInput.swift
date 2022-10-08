@@ -12,5 +12,5 @@ protocol RoomServicesRouterInput: AnyObject {
 
     func close()
     
-    func openModal(type: CreateRoomServieceCellSelectedLabelType, delegate: RoomServiecePickerDelegate)
+    func openModal(type: CreateRoomServiceCellSelectedLabelType, delegate: RoomServicePickerDelegate, selectedCategory: String?)
 }

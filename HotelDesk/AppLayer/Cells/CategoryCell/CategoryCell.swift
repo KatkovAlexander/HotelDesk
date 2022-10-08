@@ -7,37 +7,60 @@
 
 import Foundation
 import UIKit
-import SnapKit
 
 class CategoryCell: UICollectionViewCell {
     
     weak var delegate: CategoryCellDelegate?
     
-    // MARK: Life cycle
+    private var type: CategoryCellType?
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    // MARK: Outlets
+    
+    @IBOutlet private weak var backgroundImageView: UIImageView!
+    @IBOutlet private weak var frontImageView: UIImageView!
+    @IBOutlet private weak var titleLabel: UILabel!
+    
+    // MARK: Life cycle
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
         
-        backgroundColor = .red
-        layer.cornerRadius = 10
-        
-        snp.makeConstraints { make in
-            make.width.equalTo(150)
-            make.height.equalTo(150)
-        }
         
         addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTap)))
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
     @objc private func didTap() {
-        delegate?.didSelectCategory()
+        guard let type = type else {
+            return
+        }
+        
+        delegate?.didSelectCategory(type: type)
     }
     
     func bind(_ category: CategoryCellModel) {
+        self.type = category.type
+        titleLabel.text = category.type.rawValue
         
+        switch category.type {
+        case .restaurant:
+            backgroundImageView.image = UIImage(named: "restBack")
+            frontImageView.image = UIImage(systemName: "book")
+        case .roomService:
+            backgroundImageView.image = UIImage(named: "serviceBack")
+            frontImageView.image = UIImage(systemName: "house")
+        case .alarm:
+            backgroundImageView.image = UIImage(named: "alarmBack")
+            frontImageView.image = UIImage(systemName: "alarm")
+        case .mossArt:
+            backgroundImageView.image = UIImage(named: "mossArtBack")
+            frontImageView.image = UIImage(systemName: "paintbrush.pointed")
+        case .additional:
+            backgroundImageView.image = UIImage(named: "additionalBack")
+            frontImageView.image = UIImage(systemName: "plus.circle")
+        case .shop:
+            backgroundImageView.image = UIImage(named: "shopBack")
+            frontImageView.image = UIImage(systemName: "bag")
+        }
     }
 }

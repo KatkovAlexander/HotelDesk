@@ -10,10 +10,10 @@ import Foundation
 
 protocol RoomServicesInteractorInput: AnyObject {
 
-    var servieces: [CreatedRoomServieceCellModel] { get }
+    var services: [CreatedRoomServiceCellModel] { get }
     
-    func addToServices(serviece: CreatedRoomServieceCellModel)
+    func addToServices(service: CreatedRoomServiceCellModel)
     
-    func deleteService(servieceId: Int)
+    func deleteService(serviceId: Int)
 }
 

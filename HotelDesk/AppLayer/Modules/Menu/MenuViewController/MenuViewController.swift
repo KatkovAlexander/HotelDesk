@@ -84,9 +84,9 @@ class MenuViewController: UIViewController {
     }
     
     private func registerCells() {
-        collectionView.register(StoryCell.self,
+        collectionView.register(UINib(nibName: String(describing: StoryCell.self), bundle: nil),
                                 forCellWithReuseIdentifier: String(describing: StoryCell.self))
-        collectionView.register(CategoryCell.self,
+        collectionView.register(UINib(nibName: String(describing: CategoryCell.self), bundle: nil),
                                 forCellWithReuseIdentifier: String(describing: CategoryCell.self))
     }
 }

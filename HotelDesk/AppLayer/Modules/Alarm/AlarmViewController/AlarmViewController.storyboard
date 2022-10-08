@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Alarm View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="AlarmViewController" customModule="HotelDesk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Когда Вас разбудить?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6h-Ea-fl5">
+                                <rect key="frame" x="16" y="26" width="382" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                <color key="textColor" name="Dark"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="15" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="P49-LF-Oi5">
+                                <rect key="frame" x="0.0" y="66" width="414" height="216"/>
+                                <locale key="locale" localeIdentifier="ru"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Как Вас разбудить?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqw-dx-MmC">
+                                <rect key="frame" x="16" y="290" width="382" height="27.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                <color key="textColor" name="Dark"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kmd-WJ-lOf">
+                                <rect key="frame" x="16" y="333.66666666666669" width="382" height="54"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="zhV-3y-l3s"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tfT-Wa-ggl" customClass="DesignableView" customModule="HotelDesk" customModuleProvider="target">
+                                <rect key="frame" x="16" y="403.66666666666669" width="382" height="56"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Подтвердить" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2M-zK-dEz">
+                                        <rect key="frame" x="16" y="16" width="350" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <color key="textColor" name="Light"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Dark"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="M2M-zK-dEz" secondAttribute="bottom" constant="16" id="1ZX-qP-wFc"/>
+                                    <constraint firstItem="M2M-zK-dEz" firstAttribute="top" secondItem="tfT-Wa-ggl" secondAttribute="top" constant="16" id="6bc-H0-6eT"/>
+                                    <constraint firstItem="M2M-zK-dEz" firstAttribute="leading" secondItem="tfT-Wa-ggl" secondAttribute="leading" constant="16" id="ehf-o9-1mA"/>
+                                    <constraint firstAttribute="trailing" secondItem="M2M-zK-dEz" secondAttribute="trailing" constant="16" id="mXK-zs-DYa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="Light"/>
+                        <constraints>
+                            <constraint firstItem="Kmd-WJ-lOf" firstAttribute="top" secondItem="mqw-dx-MmC" secondAttribute="bottom" constant="16" id="1Db-2K-abH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="mqw-dx-MmC" secondAttribute="trailing" constant="16" id="5NB-lG-Sy9"/>
+                            <constraint firstItem="mqw-dx-MmC" firstAttribute="top" secondItem="P49-LF-Oi5" secondAttribute="bottom" constant="8" id="6Tk-W9-8RW"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="S6h-Ea-fl5" secondAttribute="trailing" constant="16" id="8sU-PN-TIU"/>
+                            <constraint firstItem="P49-LF-Oi5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="K3g-lq-EbT"/>
+                            <constraint firstItem="Kmd-WJ-lOf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="KMR-qj-0ph"/>
+                            <constraint firstItem="mqw-dx-MmC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="OFF-ao-EB0"/>
+                            <constraint firstItem="tfT-Wa-ggl" firstAttribute="top" secondItem="Kmd-WJ-lOf" secondAttribute="bottom" constant="16" id="VYi-lr-gwz"/>
+                            <constraint firstItem="tfT-Wa-ggl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="WNh-lA-m8l"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Kmd-WJ-lOf" secondAttribute="trailing" constant="16" id="YSi-Xv-wxY"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="P49-LF-Oi5" secondAttribute="trailing" id="Yw2-QH-E7A"/>
+                            <constraint firstItem="P49-LF-Oi5" firstAttribute="top" secondItem="S6h-Ea-fl5" secondAttribute="bottom" constant="8" id="b0R-fb-YCe"/>
+                            <constraint firstItem="S6h-Ea-fl5" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="26" id="fOr-9p-dg6"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tfT-Wa-ggl" secondAttribute="trailing" constant="16" id="tpL-Qe-vVb"/>
+                            <constraint firstItem="S6h-Ea-fl5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="us3-eh-Ly8"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="acceptView" destination="tfT-Wa-ggl" id="i5F-tv-kJA"/>
+                        <outlet property="datePicker" destination="P49-LF-Oi5" id="fv8-PA-JNt"/>
+                        <outlet property="segmentView" destination="Kmd-WJ-lOf" id="bbX-ko-ki8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="102"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Dark">
+            <color red="0.086274509803921567" green="0.11372549019607843" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Light">
+            <color red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

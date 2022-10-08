@@ -46,13 +46,12 @@ extension MenuPresenter: MenuViewControllerOutput {
                                              image: "4"),]
         sections.append(.init(type: .storyCell,
                               items: itemsInStories))
-        let itemsInCategory = [CategoryCellModel(image: "1"),
-                              CategoryCellModel(image: "2"),
-                              CategoryCellModel(image: "3"),
-                               CategoryCellModel(image: "4"),
-                               CategoryCellModel(image: "5"),
-                               CategoryCellModel(image: "6"),
-                               CategoryCellModel(image: "7")]
+        let itemsInCategory = [CategoryCellModel(type: .restaurant),
+                               CategoryCellModel(type: .roomService),
+                               CategoryCellModel(type: .alarm),
+                               CategoryCellModel(type: .mossArt),
+                               CategoryCellModel(type: .shop),
+                               CategoryCellModel(type: .additional)]
         sections.append(.init(type: .categoryCell,
                               items: itemsInCategory as [AnyHashable]))
         view?.updateCollection(sections: sections)
@@ -70,7 +69,14 @@ extension MenuPresenter: MenuInteractorOutput {
 
 extension MenuPresenter: CategoryCellDelegate {
     
-    func didSelectCategory() {
-        router.openRoomServices()
+    func didSelectCategory(type: CategoryCellType) {
+        switch type {
+        case .roomService:
+            router.openRoomServices()
+        case .alarm:
+            router.openAlarm()
+        default:
+            return
+        }
     }
 }

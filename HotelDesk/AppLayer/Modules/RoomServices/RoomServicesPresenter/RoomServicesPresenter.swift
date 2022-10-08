@@ -19,7 +19,7 @@ class RoomServicesPresenter {
     private var didServiceAdding = false
     private var selectedCategory: String?
     private var selectedSubcategory: String?
-    private var servieceId: Int = 0
+    private var servieceIdGenerator: Int = 0
     
     init(view: RoomServicesViewControllerInput,
          interactor: RoomServicesInteractorInput,
@@ -32,8 +32,8 @@ class RoomServicesPresenter {
     func buildModels() {
         var models: [RoomServicesTableViewCellType] = []
         
-        for service in interactor.servieces {
-            let serviceModel = RoomServicesTableViewCellType.created(.init(servieceId: service.servieceId,
+        for service in interactor.services {
+            let serviceModel = RoomServicesTableViewCellType.created(.init(serviceId: service.serviceId,
                                                                            titleText: service.titleText,
                                                                            subtitleText: service.subtitleText))
             models.append(serviceModel)
@@ -49,7 +49,7 @@ class RoomServicesPresenter {
         }
         
         view?.updateModel(models: models)
-        view?.isMakeOrderButtonAvailable(available: interactor.servieces.count > 0)
+        view?.isMakeOrderButtonAvailable(available: interactor.services.count > 0)
     }
 }
 
@@ -67,8 +67,8 @@ extension RoomServicesPresenter: RoomServicesViewControllerOutput {
         router.close()
     }
     
-    func didTapDeleteCell(servieceId: Int) {
-        interactor.deleteService(servieceId: servieceId)
+    func didTapDeleteCreatedServiceCell(serviceId: Int) {
+        interactor.deleteService(serviceId: serviceId)
     }
     
     func didTapAddRoomService() {
@@ -80,10 +80,10 @@ extension RoomServicesPresenter: RoomServicesViewControllerOutput {
         didServiceAdding = false
         selectedCategory = nil
         selectedSubcategory = nil
-        interactor.addToServices(serviece: .init(servieceId: servieceId,
+        interactor.addToServices(service: .init(serviceId: servieceIdGenerator,
                                                  titleText: title,
                                                  subtitleText: subtitle))
-        servieceId += 1
+        servieceIdGenerator += 1
     }
     
     func didTapDeleteServieceCell() {
@@ -93,8 +93,8 @@ extension RoomServicesPresenter: RoomServicesViewControllerOutput {
         buildModels()
     }
     
-    func didSelectLabel(type: CreateRoomServieceCellSelectedLabelType) {
-        router.openModal(type: type, delegate: self)
+    func didSelectLabel(type: CreateRoomServiceCellSelectedLabelType) {
+        router.openModal(type: type, delegate: self, selectedCategory: selectedCategory)
     }
 }
 
@@ -102,14 +102,14 @@ extension RoomServicesPresenter: RoomServicesViewControllerOutput {
 
 extension RoomServicesPresenter: RoomServicesInteractorOutput {
 
-    func serviecesUpdated() {
+    func servicesUpdated() {
         buildModels()
     }
 }
 
-extension RoomServicesPresenter: RoomServiecePickerDelegate {
+extension RoomServicesPresenter: RoomServicePickerDelegate {
     
-    func selectedCell(text: String, type: CreateRoomServieceCellSelectedLabelType) {
+    func selectedCell(text: String, type: CreateRoomServiceCellSelectedLabelType) {
         switch type {
         case .category:
             selectedCategory = text

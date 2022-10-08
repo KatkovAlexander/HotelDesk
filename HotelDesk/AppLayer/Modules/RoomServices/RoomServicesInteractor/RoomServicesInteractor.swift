@@ -12,22 +12,22 @@ class RoomServicesInteractor {
 
     weak var output: RoomServicesInteractorOutput!
 
-    var servieces: [CreatedRoomServieceCellModel] = []
+    var services: [CreatedRoomServiceCellModel] = []
 }
 
 // MARK: Extension - RoomServicesInteractorInput
 extension RoomServicesInteractor: RoomServicesInteractorInput {
     
-    func addToServices(serviece: CreatedRoomServieceCellModel) {
-        servieces.append(serviece)
-        output.serviecesUpdated()
+    func addToServices(service: CreatedRoomServiceCellModel) {
+        services.append(service)
+        output.servicesUpdated()
     }
     
-    func deleteService(servieceId: Int) {
-        guard let index = servieces.firstIndex(where: { $0.servieceId == servieceId }) else {
+    func deleteService(serviceId: Int) {
+        guard let index = services.firstIndex(where: { $0.serviceId == serviceId }) else {
             return
         }
-        servieces.remove(at: index)
-        output.serviecesUpdated()
+        services.remove(at: index)
+        output.servicesUpdated()
     }
 }

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NLVSegmentControl" customModule="Nalavashe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JYh-z8-JQF" customClass="BNDesignableView" customModule="Nalavashe" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SaL-q3-Bzd" customClass="BNDesignableButton" customModule="Nalavashe" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="172" height="43"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <viewLayoutGuide key="safeArea" id="PGe-pD-Fle"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                    <size key="value" width="0.0" height="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                    <real key="value" value="0.20000000000000001"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="tQO-AP-SIF">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="tQO-AP-SIF" secondAttribute="trailing" id="A9J-Gd-QSw"/>
+                        <constraint firstItem="tQO-AP-SIF" firstAttribute="top" secondItem="JYh-z8-JQF" secondAttribute="top" id="hpl-Wg-MkL"/>
+                        <constraint firstItem="tQO-AP-SIF" firstAttribute="leading" secondItem="JYh-z8-JQF" secondAttribute="leading" id="jMj-oa-uMo"/>
+                        <constraint firstAttribute="bottom" secondItem="tQO-AP-SIF" secondAttribute="bottom" id="qCu-R3-VWo"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="JYh-z8-JQF" secondAttribute="bottom" id="OtJ-NI-k6X"/>
+                <constraint firstItem="JYh-z8-JQF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TPK-Ds-fNV"/>
+                <constraint firstAttribute="trailing" secondItem="JYh-z8-JQF" secondAttribute="trailing" id="fXW-lh-Jor"/>
+                <constraint firstItem="JYh-z8-JQF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lLF-pO-OWh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="segmentsStackView" destination="tQO-AP-SIF" id="Ofd-aq-vcB"/>
+                <outlet property="slidingSegmentView" destination="SaL-q3-Bzd" id="kAI-7C-caM"/>
+            </connections>
+            <point key="canvasLocation" x="138.40579710144928" y="20.424107142857142"/>
+        </view>
+    </objects>
+</document>

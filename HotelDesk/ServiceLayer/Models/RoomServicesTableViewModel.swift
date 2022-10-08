@@ -10,9 +10,9 @@ import Foundation
 
 enum RoomServicesTableViewCellType {
     
-    case created(_ model: CreatedRoomServieceCellModel)
+    case created(_ model: CreatedRoomServiceCellModel)
     
     case add
     
-    case create(_ model: CreateRoomServieceCellModel)
+    case create(_ model: CreateRoomServiceCellModel)
 }
