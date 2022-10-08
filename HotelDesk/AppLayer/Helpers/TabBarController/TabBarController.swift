@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TabBarController: UITabBarController {
+class TabBarController: UITabBarController, AuthFlowTransitionHandler {
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -49,7 +49,29 @@ class TabBarController: UITabBarController {
     
             return controller
         }
-        
+        delegate = self
         super.setViewControllers(controllers, animated: true)
+    }
+}
+
+extension TabBarController: UITabBarControllerDelegate {
+    
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        guard let indexOfController = viewControllers?.firstIndex(of: viewController) else {
+            return true
+        }
+        
+        guard let tabBarItemType = TabBarItemType(rawValue: indexOfController),
+              tabBarItemType != .menu else {
+            return true
+        }
+        
+        let result = Globals.authed
+        
+        if !result {
+            openAuthModal()
+        }
+        
+        return result
     }
 }

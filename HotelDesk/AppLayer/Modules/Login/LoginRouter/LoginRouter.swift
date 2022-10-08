@@ -18,7 +18,7 @@ class LoginRouter: LoginRouterInput {
     func openQRCodeScanner() {
         print(#fileID, #function)
         
-        transitionHandler?.push(QRScannerConfigurator().configure())
+//        transitionHandler?.push(QRScannerConfigurator().configure())
     }
     
     func openMain() {

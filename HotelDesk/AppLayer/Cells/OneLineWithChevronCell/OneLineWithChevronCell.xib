@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="84" id="Yer-Ps-Lsr" customClass="OneLineWithChevronCell" customModule="HotelDesk" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="419" height="84"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yer-Ps-Lsr" id="EZN-CB-4Px">
+                <rect key="frame" x="0.0" y="0.0" width="419" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qLg-RQ-rte" customClass="DesignableView" customModule="HotelDesk" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="403" height="68"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPG-dh-aPU">
+                                <rect key="frame" x="16" y="16" width="335" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="UD3-pT-ler">
+                                <rect key="frame" x="367" y="26" width="20" height="16.5"/>
+                                <color key="tintColor" name="Dark"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="Mr2-5L-vQm"/>
+                                    <constraint firstAttribute="height" constant="20" id="Y0u-tW-F5b"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="UD3-pT-ler" secondAttribute="trailing" constant="16" id="28J-Ap-rzY"/>
+                            <constraint firstItem="UD3-pT-ler" firstAttribute="leading" secondItem="fPG-dh-aPU" secondAttribute="trailing" constant="16" id="3PZ-2S-0iL"/>
+                            <constraint firstItem="UD3-pT-ler" firstAttribute="centerY" secondItem="qLg-RQ-rte" secondAttribute="centerY" id="7w6-As-2gS"/>
+                            <constraint firstItem="fPG-dh-aPU" firstAttribute="leading" secondItem="qLg-RQ-rte" secondAttribute="leading" constant="16" id="Ts9-Os-ffT"/>
+                            <constraint firstItem="fPG-dh-aPU" firstAttribute="top" secondItem="qLg-RQ-rte" secondAttribute="top" constant="16" id="fL1-VD-ewV"/>
+                            <constraint firstAttribute="bottom" secondItem="fPG-dh-aPU" secondAttribute="bottom" constant="16" id="ggS-8U-guL"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="Light"/>
+                <constraints>
+                    <constraint firstItem="qLg-RQ-rte" firstAttribute="leading" secondItem="EZN-CB-4Px" secondAttribute="leading" constant="8" id="3X6-zQ-0Ae"/>
+                    <constraint firstAttribute="bottom" secondItem="qLg-RQ-rte" secondAttribute="bottom" constant="8" id="Cnj-WO-FPv"/>
+                    <constraint firstItem="qLg-RQ-rte" firstAttribute="top" secondItem="EZN-CB-4Px" secondAttribute="top" constant="8" id="JnJ-Xd-po2"/>
+                    <constraint firstAttribute="trailing" secondItem="qLg-RQ-rte" secondAttribute="trailing" constant="8" id="vo8-cf-72P"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="containerView" destination="qLg-RQ-rte" id="KqR-1q-aI6"/>
+                <outlet property="titleLabel" destination="fPG-dh-aPU" id="ELW-FB-JAY"/>
+            </connections>
+            <point key="canvasLocation" x="141.30434782608697" y="89.732142857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <namedColor name="Dark">
+            <color red="0.086274509803921567" green="0.11372549019607843" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Light">
+            <color red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -24,8 +24,7 @@ class QRScannerRouter: QRScannerRouterInput {
     
     func openMain() {
         print(#fileID, #function)
-        
-        GlobalRouter.instance.setMain()
+    
     }
 }
 

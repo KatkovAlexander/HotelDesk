@@ -36,14 +36,11 @@ extension MenuPresenter: MenuViewControllerOutput {
         
         var sections: [MenuSectionModel] = []
         
-        let itemsInStories = [StoryCellModel(text: "1",
-                                             image: "1"),
-                              StoryCellModel(text: "2",
-                                             image: "2"),
-                              StoryCellModel(text: "3",
-                                             image: "3"),
-                              StoryCellModel(text: "4",
-                                             image: "4"),]
+        let itemsInStories = [StoryCellModel(image: "story1"),
+                              StoryCellModel(image: "story2"),
+                              StoryCellModel(image: "story3"),
+                              StoryCellModel(image: "story4"),
+                              StoryCellModel(image: "story5")]
         sections.append(.init(type: .storyCell,
                               items: itemsInStories))
         let itemsInCategory = [CategoryCellModel(type: .restaurant),
@@ -70,13 +67,17 @@ extension MenuPresenter: MenuInteractorOutput {
 extension MenuPresenter: CategoryCellDelegate {
     
     func didSelectCategory(type: CategoryCellType) {
-        switch type {
-        case .roomService:
-            router.openRoomServices()
-        case .alarm:
-            router.openAlarm()
-        default:
-            return
+        if Globals.authed {
+            switch type {
+            case .roomService:
+                router.openRoomServices()
+            case .alarm:
+                router.openAlarm()
+            default:
+                return
+            }
+        } else {
+            router.openAuth()
         }
     }
 }

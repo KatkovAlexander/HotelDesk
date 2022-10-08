@@ -14,4 +14,6 @@ protocol QRScannerViewControllerInput: AnyObject {
     func initialSetup(title: String)
     
     func showError(error: String)
+    
+    func close()
 }

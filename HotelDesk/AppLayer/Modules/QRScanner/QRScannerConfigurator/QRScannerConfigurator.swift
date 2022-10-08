@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import PanModal
 
 final class QRScannerConfigurator {
     
-    func configure() -> UIViewController {
+    func configure() -> UIViewController & PanModalPresentable {
         guard let viewController = UIStoryboard(name: String(describing: QRScannerViewController.self), bundle: nil).instantiateInitialViewController() as? QRScannerViewController else {
             fatalError("Can't load QRScannerViewController from storyboard")
         }

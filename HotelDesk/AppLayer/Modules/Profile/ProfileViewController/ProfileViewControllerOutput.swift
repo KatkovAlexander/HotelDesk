@@ -9,7 +9,7 @@
 
 import Foundation
 
-protocol ProfileViewControllerOutput: AnyObject {
+protocol ProfileViewControllerOutput: AnyObject, OneLineWithChevronCellDelegate {
     
     func viewDidLoad()
 }

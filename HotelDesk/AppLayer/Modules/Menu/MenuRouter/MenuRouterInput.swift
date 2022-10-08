@@ -13,4 +13,6 @@ protocol MenuRouterInput: AnyObject {
     func openRoomServices()
     
     func openAlarm()
+    
+    func openAuth()
 }

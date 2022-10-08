@@ -18,18 +18,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VSb-zt-xiR">
-                                <rect key="frame" x="0.0" y="44" width="414" height="46"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="82.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отсканируйте QR-код" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cN1-GB-ncG">
-                                        <rect key="frame" x="16" y="0.0" width="382" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отсканируйте QR-код, чтобы авторизироваться" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cN1-GB-ncG">
+                                        <rect key="frame" x="16" y="16" width="382" height="50.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <color key="textColor" name="Light"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" name="Dark"/>
                                 <constraints>
-                                    <constraint firstItem="cN1-GB-ncG" firstAttribute="top" secondItem="VSb-zt-xiR" secondAttribute="top" id="Abi-Jb-UWT"/>
+                                    <constraint firstItem="cN1-GB-ncG" firstAttribute="top" secondItem="VSb-zt-xiR" secondAttribute="top" constant="16" id="Abi-Jb-UWT"/>
                                     <constraint firstItem="cN1-GB-ncG" firstAttribute="leading" secondItem="VSb-zt-xiR" secondAttribute="leading" constant="16" id="YI6-iW-5Hq"/>
                                     <constraint firstAttribute="trailing" secondItem="cN1-GB-ncG" secondAttribute="trailing" constant="16" id="itj-Hb-VSb"/>
                                     <constraint firstAttribute="bottom" secondItem="cN1-GB-ncG" secondAttribute="bottom" constant="16" id="pq4-MH-z9G"/>

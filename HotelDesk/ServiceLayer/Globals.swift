@@ -10,6 +10,8 @@ import AVFoundation
 
 class Globals {
     
+    static var authed = true
+    
     static let correctLink = "https://www.husqvarna.com/Automower/"
     
     static let supportedCodeTypes = [AVMetadataObject.ObjectType.upce,
@@ -27,18 +29,17 @@ class Globals {
                                      AVMetadataObject.ObjectType.qr]
     
     static let RoomServieceDic: [String: [String]] = ["Меню подушек" : ["Заменить на пуховую",
-                                                                        "Заменить на ортопедическая",
-                                                                        "Заменить на гипоаллергенные",
+                                                                        "Заменить на ортопедическую",
+                                                                        "Заменить на гипоаллергенную",
                                                                         "Заменить на супер жесткую из гречихи",
-                                                                        "Заменить на подушка для беременных"],
+                                                                        "Заменить на подушку для беременных"],
                                                       "Меню ванных принадлежностей" : ["Гель для душа",
                                                                                        "Шампунь для волос",
                                                                                        "Мыло для рук",
                                                                                        "Бритвенный набор",
                                                                                        "Крем для тела",
                                                                                        "Шапочка для душа",
-                                                                                       "Зубной набор",
-                                                                                       "Zielinski & Rozen"],
+                                                                                       "Зубной набор"],
                                                       "Ванный комплект" : ["Халат S",
                                                                            "Халат M",
                                                                            "Халат L",

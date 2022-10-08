@@ -7,12 +7,10 @@
 
 struct StoryCellModel: Hashable, Equatable {
     
-    let text: String
     let image: String
     
     var hashValue: Int {
         var hasher = Hasher()
-        hasher.combine(text)
         hasher.combine(image)
         return hasher.finalize()
     }

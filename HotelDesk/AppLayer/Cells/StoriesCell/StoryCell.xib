@@ -17,26 +17,31 @@
                 <rect key="frame" x="0.0" y="0.0" width="178" height="146"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32F-pA-k3l">
-                        <rect key="frame" x="100" y="63" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="story1" translatesAutoresizingMaskIntoConstraints="NO" id="Hrg-gf-7Hz">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="hnc-R8-TNv"/>
+                            <constraint firstAttribute="height" constant="100" id="yHE-Md-Dnp"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="32F-pA-k3l" secondAttribute="trailing" constant="100" id="3EC-zm-sXF"/>
-                    <constraint firstAttribute="bottom" secondItem="32F-pA-k3l" secondAttribute="bottom" constant="62" id="6sI-ze-RAl"/>
-                    <constraint firstItem="32F-pA-k3l" firstAttribute="leading" secondItem="8pK-V5-DSA" secondAttribute="leading" constant="100" id="Amg-g7-3u5"/>
-                    <constraint firstItem="32F-pA-k3l" firstAttribute="top" secondItem="8pK-V5-DSA" secondAttribute="top" constant="63" id="R24-mY-yFb"/>
+                    <constraint firstItem="Hrg-gf-7Hz" firstAttribute="top" secondItem="8pK-V5-DSA" secondAttribute="top" id="QmO-Qz-I2c"/>
+                    <constraint firstAttribute="trailing" secondItem="Hrg-gf-7Hz" secondAttribute="trailing" id="WNY-h3-X0G"/>
+                    <constraint firstAttribute="bottom" secondItem="Hrg-gf-7Hz" secondAttribute="bottom" id="qpr-dX-3jq"/>
+                    <constraint firstItem="Hrg-gf-7Hz" firstAttribute="leading" secondItem="8pK-V5-DSA" secondAttribute="leading" id="s3D-j4-NWg"/>
                 </constraints>
             </collectionViewCellContentView>
             <color key="backgroundColor" name="Dark"/>
             <size key="customSize" width="178" height="146"/>
+            <connections>
+                <outlet property="storyImageView" destination="Hrg-gf-7Hz" id="IeY-pq-2FH"/>
+            </connections>
             <point key="canvasLocation" x="140.57971014492756" y="117.85714285714285"/>
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="story1" width="1170" height="658"/>
         <namedColor name="Dark">
             <color red="0.086274509803921567" green="0.11372549019607843" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

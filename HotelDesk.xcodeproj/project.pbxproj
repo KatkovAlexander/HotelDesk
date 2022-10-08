@@ -89,6 +89,14 @@
 		113E5CC928F1A5B000288090 /* SegmentControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113E5CC728F1A5B000288090 /* SegmentControl.xib */; };
 		113E5CCA28F1A5B000288090 /* SegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E5CC828F1A5B000288090 /* SegmentControl.swift */; };
 		113E5CCC28F1AA7F00288090 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E5CCB28F1AA7F00288090 /* NibLoadable.swift */; };
+		113E5CCE28F1B48300288090 /* ProfileTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E5CCD28F1B48300288090 /* ProfileTableViewModel.swift */; };
+		113E5CD128F1B89200288090 /* RoomNumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E5CD028F1B89200288090 /* RoomNumberCell.swift */; };
+		113E5CD328F1B8B200288090 /* RoomNumberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113E5CD228F1B8B200288090 /* RoomNumberCell.xib */; };
+		113E5CD628F1BA9700288090 /* OneLineWithChevronCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E5CD528F1BA9700288090 /* OneLineWithChevronCell.swift */; };
+		113E5CD828F1BAAC00288090 /* OneLineWithChevronCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113E5CD728F1BAAC00288090 /* OneLineWithChevronCell.xib */; };
+		113E5CDA28F1BCEC00288090 /* OneLineWithChevronCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E5CD928F1BCEC00288090 /* OneLineWithChevronCellModel.swift */; };
+		113E5CDC28F1BCF500288090 /* OneLineWithChevronCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E5CDB28F1BCF500288090 /* OneLineWithChevronCellDelegate.swift */; };
+		113E5CDF28F1CDB400288090 /* AuthFlowTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E5CDE28F1CDB400288090 /* AuthFlowTransitionHandler.swift */; };
 		114272D628EF258000122A14 /* RoomServicesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114272D528EF258000122A14 /* RoomServicesConfigurator.swift */; };
 		114272DA28EF258800122A14 /* RoomServicesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114272D728EF258800122A14 /* RoomServicesInteractor.swift */; };
 		114272DB28EF258800122A14 /* RoomServicesInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114272D828EF258800122A14 /* RoomServicesInteractorOutput.swift */; };
@@ -220,6 +228,14 @@
 		113E5CC728F1A5B000288090 /* SegmentControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentControl.xib; sourceTree = "<group>"; };
 		113E5CC828F1A5B000288090 /* SegmentControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentControl.swift; sourceTree = "<group>"; };
 		113E5CCB28F1AA7F00288090 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		113E5CCD28F1B48300288090 /* ProfileTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewModel.swift; sourceTree = "<group>"; };
+		113E5CD028F1B89200288090 /* RoomNumberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomNumberCell.swift; sourceTree = "<group>"; };
+		113E5CD228F1B8B200288090 /* RoomNumberCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomNumberCell.xib; sourceTree = "<group>"; };
+		113E5CD528F1BA9700288090 /* OneLineWithChevronCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineWithChevronCell.swift; sourceTree = "<group>"; };
+		113E5CD728F1BAAC00288090 /* OneLineWithChevronCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OneLineWithChevronCell.xib; sourceTree = "<group>"; };
+		113E5CD928F1BCEC00288090 /* OneLineWithChevronCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineWithChevronCellModel.swift; sourceTree = "<group>"; };
+		113E5CDB28F1BCF500288090 /* OneLineWithChevronCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineWithChevronCellDelegate.swift; sourceTree = "<group>"; };
+		113E5CDE28F1CDB400288090 /* AuthFlowTransitionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlowTransitionHandler.swift; sourceTree = "<group>"; };
 		114272D528EF258000122A14 /* RoomServicesConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomServicesConfigurator.swift; sourceTree = "<group>"; };
 		114272D728EF258800122A14 /* RoomServicesInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomServicesInteractor.swift; sourceTree = "<group>"; };
 		114272D828EF258800122A14 /* RoomServicesInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomServicesInteractorOutput.swift; sourceTree = "<group>"; };
@@ -390,6 +406,7 @@
 				110960F128DA2065001F0035 /* GlobalRouter.swift */,
 				110960F328DA2082001F0035 /* Globals.swift */,
 				11937F8428E9B64500224DB9 /* Mock.swift */,
+				113E5CDE28F1CDB400288090 /* AuthFlowTransitionHandler.swift */,
 			);
 			path = ServiceLayer;
 			sourceTree = "<group>";
@@ -397,6 +414,8 @@
 		110960F728DA2127001F0035 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				113E5CD428F1BA8100288090 /* OneLineWithChevronCell */,
+				113E5CCF28F1B85500288090 /* RoomNumberCell */,
 				1142730328F0816700122A14 /* CreateRoomServiceCell */,
 				114272F428EF362E00122A14 /* CreatedRoomServiceCell */,
 				114272F128EF33B100122A14 /* AddRoomServiceCell */,
@@ -769,6 +788,26 @@
 			path = SegmentControl;
 			sourceTree = "<group>";
 		};
+		113E5CCF28F1B85500288090 /* RoomNumberCell */ = {
+			isa = PBXGroup;
+			children = (
+				113E5CD028F1B89200288090 /* RoomNumberCell.swift */,
+				113E5CD228F1B8B200288090 /* RoomNumberCell.xib */,
+			);
+			path = RoomNumberCell;
+			sourceTree = "<group>";
+		};
+		113E5CD428F1BA8100288090 /* OneLineWithChevronCell */ = {
+			isa = PBXGroup;
+			children = (
+				113E5CD528F1BA9700288090 /* OneLineWithChevronCell.swift */,
+				113E5CD728F1BAAC00288090 /* OneLineWithChevronCell.xib */,
+				113E5CD928F1BCEC00288090 /* OneLineWithChevronCellModel.swift */,
+				113E5CDB28F1BCF500288090 /* OneLineWithChevronCellDelegate.swift */,
+			);
+			path = OneLineWithChevronCell;
+			sourceTree = "<group>";
+		};
 		114272CD28EF24F700122A14 /* RoomServices */ = {
 			isa = PBXGroup;
 			children = (
@@ -921,6 +960,7 @@
 				118FC5F328E2F22900D9820A /* MenuCollectionViewModel.swift */,
 				11937FA328ED8C0C00224DB9 /* MessageModel.swift */,
 				114272ED28EF31EE00122A14 /* RoomServicesTableViewModel.swift */,
+				113E5CCD28F1B48300288090 /* ProfileTableViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1034,6 +1074,8 @@
 				1142731C28F09FFF00122A14 /* RoomServicePickerViewController.storyboard in Resources */,
 				1109612228DA21FB001F0035 /* QRScannerViewController.storyboard in Resources */,
 				110960D328DA1C5C001F0035 /* LaunchScreen.storyboard in Resources */,
+				113E5CD828F1BAAC00288090 /* OneLineWithChevronCell.xib in Resources */,
+				113E5CD328F1B8B200288090 /* RoomNumberCell.xib in Resources */,
 				113E5CC928F1A5B000288090 /* SegmentControl.xib in Resources */,
 				113E5CC428F195E500288090 /* AlarmViewController.storyboard in Resources */,
 				110960D028DA1C5C001F0035 /* Assets.xcassets in Resources */,
@@ -1097,11 +1139,13 @@
 				11937F9E28ED896000224DB9 /* ChatOutboxCell.swift in Sources */,
 				1109617228DA223A001F0035 /* MenuViewController.swift in Sources */,
 				1109617728DA223A001F0035 /* ProfileViewControllerOutput.swift in Sources */,
+				113E5CDF28F1CDB400288090 /* AuthFlowTransitionHandler.swift in Sources */,
 				1142731628F09E6E00122A14 /* RoomServicePickerViewController.swift in Sources */,
 				113E5CC228F1959400288090 /* AlarmViewControllerInput.swift in Sources */,
 				118FC5CC28E0873100D9820A /* UICollectionReusableView+extension.swift in Sources */,
 				113E5CBC28F1959400288090 /* AlarmRouter.swift in Sources */,
 				114272E828EF259F00122A14 /* RoomServicesViewControllerInput.swift in Sources */,
+				113E5CDA28F1BCEC00288090 /* OneLineWithChevronCellModel.swift in Sources */,
 				113E5CBE28F1959400288090 /* AlarmPresenter.swift in Sources */,
 				1109610B28DA2151001F0035 /* LoginViewController.swift in Sources */,
 				118FC5BC28E078CB00D9820A /* MenuCatalogLayout.swift in Sources */,
@@ -1126,10 +1170,12 @@
 				1109610C28DA2151001F0035 /* LoginViewControllerInput.swift in Sources */,
 				1109610828DA2151001F0035 /* LoginRouterInput.swift in Sources */,
 				113E5CBF28F1959400288090 /* AlarmConfigurator.swift in Sources */,
+				113E5CDC28F1BCF500288090 /* OneLineWithChevronCellDelegate.swift in Sources */,
 				114272EE28EF31EE00122A14 /* RoomServicesTableViewModel.swift in Sources */,
 				114272E228EF259500122A14 /* RoomServicesRouterInput.swift in Sources */,
 				110960F228DA2065001F0035 /* GlobalRouter.swift in Sources */,
 				113E5CCC28F1AA7F00288090 /* NibLoadable.swift in Sources */,
+				113E5CD628F1BA9700288090 /* OneLineWithChevronCell.swift in Sources */,
 				1109612728DA21FB001F0035 /* QRScannerInteractorInput.swift in Sources */,
 				110960ED28DA2018001F0035 /* NavigationController.swift in Sources */,
 				1109617328DA223A001F0035 /* ProfilePresenter.swift in Sources */,
@@ -1169,6 +1215,7 @@
 				1142731A28F09E7600122A14 /* RoomServicePickerConfigurator.swift in Sources */,
 				113E5CC028F1959400288090 /* AlarmViewController.swift in Sources */,
 				113E5CBD28F1959400288090 /* AlarmRouterInput.swift in Sources */,
+				113E5CCE28F1B48300288090 /* ProfileTableViewModel.swift in Sources */,
 				1109610628DA2151001F0035 /* LoginPresenter.swift in Sources */,
 				114272F628EF365600122A14 /* CreatedRoomServiceCell.swift in Sources */,
 				118FC5F428E2F22900D9820A /* MenuCollectionViewModel.swift in Sources */,
@@ -1192,6 +1239,7 @@
 				114272DC28EF258800122A14 /* RoomServicesInteractorInput.swift in Sources */,
 				114272FA28EF3ED200122A14 /* AddRoomServiceCellDelegate.swift in Sources */,
 				1109612328DA21FB001F0035 /* QRScannerViewControllerInput.swift in Sources */,
+				113E5CD128F1B89200288090 /* RoomNumberCell.swift in Sources */,
 				1109616E28DA223A001F0035 /* MenuConfigurator.swift in Sources */,
 				1109611F28DA21FB001F0035 /* QRScannerConfigurator.swift in Sources */,
 				1109616C28DA223A001F0035 /* MenuRouter.swift in Sources */,

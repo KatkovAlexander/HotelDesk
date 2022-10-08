@@ -23,5 +23,9 @@ class MenuRouter: MenuRouterInput {
     func openAlarm() {
         transitionHandler?.openModal(AlarmConfigurator().configure())
     }
+    
+    func openAuth() {
+        transitionHandler?.openModal(QRScannerConfigurator().configure())
+    }
 }
 

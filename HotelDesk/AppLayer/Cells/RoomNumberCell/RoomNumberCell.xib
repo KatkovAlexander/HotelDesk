@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="85" id="x2H-Iy-Sie" customClass="RoomNumberCell" customModule="HotelDesk" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="411" height="102"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x2H-Iy-Sie" id="4RD-pw-GgL">
+                <rect key="frame" x="0.0" y="0.0" width="411" height="102"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HR2-c1-SKc" customClass="DesignableView" customModule="HotelDesk" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="395" height="78"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Номер комнаты:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nin-eo-2ij">
+                                <rect key="frame" x="16" y="8" width="363" height="23"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <color key="textColor" name="Dark"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YqS-Se-hVm">
+                                <rect key="frame" x="16" y="42" width="363" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="Dark"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Nin-eo-2ij" firstAttribute="top" secondItem="HR2-c1-SKc" secondAttribute="top" constant="16" id="0Cv-mc-ZpS"/>
+                            <constraint firstAttribute="bottom" secondItem="YqS-Se-hVm" secondAttribute="bottom" constant="16" id="1LI-CZ-df5"/>
+                            <constraint firstItem="YqS-Se-hVm" firstAttribute="leading" secondItem="HR2-c1-SKc" secondAttribute="leading" constant="16" id="L0F-uC-Zh7"/>
+                            <constraint firstAttribute="trailing" secondItem="Nin-eo-2ij" secondAttribute="trailing" constant="16" id="MQV-Rs-bvO"/>
+                            <constraint firstItem="YqS-Se-hVm" firstAttribute="top" secondItem="Nin-eo-2ij" secondAttribute="bottom" constant="4" id="YGx-FM-6Pm"/>
+                            <constraint firstAttribute="trailing" secondItem="YqS-Se-hVm" secondAttribute="trailing" constant="16" id="Zff-dO-51D"/>
+                            <constraint firstItem="Nin-eo-2ij" firstAttribute="leading" secondItem="HR2-c1-SKc" secondAttribute="leading" constant="16" id="egE-mu-cyJ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="Light"/>
+                <constraints>
+                    <constraint firstItem="HR2-c1-SKc" firstAttribute="leading" secondItem="4RD-pw-GgL" secondAttribute="leading" constant="8" id="2GU-ca-22X"/>
+                    <constraint firstItem="HR2-c1-SKc" firstAttribute="top" secondItem="4RD-pw-GgL" secondAttribute="top" constant="8" id="3Md-ew-niM"/>
+                    <constraint firstAttribute="bottom" secondItem="HR2-c1-SKc" secondAttribute="bottom" constant="16" id="O0l-E0-G8b"/>
+                    <constraint firstAttribute="trailing" secondItem="HR2-c1-SKc" secondAttribute="trailing" constant="8" id="ZLG-aG-zOz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="roomNumberLabel" destination="YqS-Se-hVm" id="5Bd-cq-05o"/>
+            </connections>
+            <point key="canvasLocation" x="64.492753623188406" y="95.758928571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Dark">
+            <color red="0.086274509803921567" green="0.11372549019607843" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Light">
+            <color red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -45,7 +45,8 @@ extension QRScannerPresenter: QRScannerViewControllerOutput {
 
             if let metadataObj = metadataObj.stringValue {
                 if metadataObj == Globals.correctLink {
-                    router.openMain()
+                    Globals.authed = true
+                    view?.close()
                 } else {
                     view?.showError(error: "Неверный QR код")
                 }

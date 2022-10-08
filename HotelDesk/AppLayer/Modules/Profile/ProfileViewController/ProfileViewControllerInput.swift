@@ -12,4 +12,6 @@ import Foundation
 protocol ProfileViewControllerInput: AnyObject {
 
     func initialSetup(title: String)
+    
+    func updateModel(models: [ProfileTableViewCellType])
 }

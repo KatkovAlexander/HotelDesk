@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import PanModal
 
 class QRScannerViewController: UIViewController {
     
@@ -17,10 +18,14 @@ class QRScannerViewController: UIViewController {
     
     @IBOutlet private weak var titleView: UIView! {
         didSet {
-            titleView.isHidden = true
+            titleView.isHidden = false
         }
     }
-    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var titleLabel: UILabel! {
+        didSet {
+            titleLabel.text = "Отсканируйте QR-код,\nчтобы авторизироваться"
+        }
+    }
     @IBOutlet private weak var errorView: DesignableView! {
         didSet {
             errorView.isHidden = true
@@ -107,6 +112,10 @@ extension QRScannerViewController: QRScannerViewControllerInput {
             self.errorView.isHidden = true
         }
     }
+    
+    func close() {
+        dismiss(animated: true)
+    }
 }
 
 extension QRScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
@@ -119,5 +128,40 @@ extension QRScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
                 self.didQrCodeCathced = false
             }
         }
+    }
+}
+
+extension QRScannerViewController: PanModalPresentable {
+    
+    var panScrollable: UIScrollView? {
+        return nil
+    }
+    
+    var shortFormHeight: PanModalHeight {
+        return .maxHeight
+    }
+    
+    var longFormHeight: PanModalHeight {
+        return .maxHeight
+    }
+    
+    var shouldRoundTopCorners: Bool {
+        return true
+    }
+    
+    var showDragIndicator: Bool {
+        return true
+    }
+    
+    var allowsTapToDismiss: Bool {
+        return true
+    }
+    
+    var allowsDragToDismiss: Bool {
+        return true
+    }
+    
+    func shouldRespond(to panModalGestureRecognizer: UIPanGestureRecognizer) -> Bool {
+        return true
     }
 }
