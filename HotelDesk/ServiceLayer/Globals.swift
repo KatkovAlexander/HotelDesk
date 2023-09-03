@@ -10,9 +10,9 @@ import AVFoundation
 
 class Globals {
     
-    static var authed = true
+    static var authed = false
     
-    static let correctLink = "https://www.husqvarna.com/Automower/"
+    static let correctLink = "http://drive.google.com/file/d/1OvDjAWEZTB2vakG1HRZDX70QsPn5Cw2f/view?usp=sharing"
     
     static let supportedCodeTypes = [AVMetadataObject.ObjectType.upce,
                                      AVMetadataObject.ObjectType.code39,

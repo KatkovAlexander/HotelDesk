@@ -44,6 +44,7 @@ extension QRScannerPresenter: QRScannerViewControllerOutput {
            Globals.supportedCodeTypes.contains(metadataObj.type) {
 
             if let metadataObj = metadataObj.stringValue {
+                print(metadataObj)
                 if metadataObj == Globals.correctLink {
                     Globals.authed = true
                     view?.close()
