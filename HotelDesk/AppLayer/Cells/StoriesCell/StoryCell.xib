@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,17 +12,17 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="alq-F0-GUR" customClass="StoryCell" customModule="HotelDesk" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="178" height="146"/>
+            <rect key="frame" x="0.0" y="0.0" width="212" height="147"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="8pK-V5-DSA">
-                <rect key="frame" x="0.0" y="0.0" width="178" height="146"/>
+                <rect key="frame" x="0.0" y="0.0" width="212" height="147"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="story1" translatesAutoresizingMaskIntoConstraints="NO" id="Hrg-gf-7Hz">
-                        <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="120"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="150" id="hnc-R8-TNv"/>
-                            <constraint firstAttribute="height" constant="100" id="yHE-Md-Dnp"/>
+                            <constraint firstAttribute="width" constant="200" id="hnc-R8-TNv"/>
+                            <constraint firstAttribute="height" constant="120" id="yHE-Md-Dnp"/>
                         </constraints>
                     </imageView>
                 </subviews>
@@ -33,11 +34,11 @@
                 </constraints>
             </collectionViewCellContentView>
             <color key="backgroundColor" name="Dark"/>
-            <size key="customSize" width="178" height="146"/>
+            <size key="customSize" width="212" height="147"/>
             <connections>
                 <outlet property="storyImageView" destination="Hrg-gf-7Hz" id="IeY-pq-2FH"/>
             </connections>
-            <point key="canvasLocation" x="140.57971014492756" y="117.85714285714285"/>
+            <point key="canvasLocation" x="165.21739130434784" y="118.19196428571428"/>
         </collectionViewCell>
     </objects>
     <resources>

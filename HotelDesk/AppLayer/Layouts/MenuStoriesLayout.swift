@@ -12,20 +12,21 @@ struct StoriesLayout: SectionLayoutable {
     var background: UICollectionReusableView.Type?
 
     var section: NSCollectionLayoutSection {
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
-                                              heightDimension: .fractionalHeight(1.0))
+        let itemSize = NSCollectionLayoutSize(widthDimension: .estimated(200),
+                                              heightDimension: .estimated(120))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
 
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.6),
-                                               heightDimension: .fractionalHeight(0.2))
+        let groupSize = NSCollectionLayoutSize(widthDimension: .estimated(200),
+                                               heightDimension: .estimated(120))
         let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize,
                                                      subitem: item,
                                                      count: 1)
-        group.contentInsets = NSDirectionalEdgeInsets(
-            top: 5,
-            leading: 4,
-            bottom: 5,
-            trailing: 5)
+        group.edgeSpacing = NSCollectionLayoutEdgeSpacing(
+            leading: .fixed(5),
+            top: .fixed(5),
+            trailing: .fixed(0),
+            bottom: .fixed(5)
+        )
 
         let section = NSCollectionLayoutSection(group: group)
         section.contentInsets.top = 12
